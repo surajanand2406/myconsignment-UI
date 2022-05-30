@@ -1,0 +1,325 @@
+.home-container .search-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 20px;
+}
+.home-container .icons-bar{
+    display: flex; 
+    width:80vw; 
+}
+.home-container .icon-scroll-div::-webkit-scrollbar {
+    width: 1em
+  }
+
+.home-container .icon-scroll-div::-webkit-scrollbar-track{
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+.home-container .icon-scroll-div::-webkit-scrollbar-thumb{
+    background-color: darkcyan;
+}
+.home-container .filter-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.home-container .filter-container .filter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:80%;
+    border:'solid 2px #eeeeee';
+    box-shadow: 0 8px 10px 5px #eeeeee;
+}
+.home-container .filter .dropdown{
+    height: 70px;
+    width:30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.home-container .filter .dropdown:hover{
+    background-color: #eeeeee;
+}
+
+.home-container .products-container{
+   margin-top: 50px;
+   display: flex;
+   justify-content: center;
+}
+.home-container .products-container .products{
+    width:80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.home-container .products-container .products .Cards{
+    box-shadow: 1px 1px 4px 0px lightgray;
+}
+.home-container .What-You-Get-Section{
+  width:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eeeeee;
+}
+.home-container .What-You-Get-Section .What-You-Get-Inner-Container{
+  width: 80%;
+  padding: 20px;
+}
+.home-container .What-You-Get-Section .What-You-Get-Inner-Container .main-box{
+  display: flex;
+  align-items: center;
+}
+.home-container .What-You-Get-Section .What-You-Get-Inner-Container .main-box .box-1,.box-2{
+  width: 50%;
+  padding: 30px;
+}
+
+.home-container .How-To-Get-Start{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.home-container .How-To-Get-Start .How-To-Get-Start-Inner-Container{
+  width: 70%;
+
+}
+
+
+.home-container .mobile-apps-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  background-color: #eeeeee;
+}
+.home-container .mobile-apps-container .mobile-apps{
+  width: 80%;
+  display: flex;
+  align-items: center;
+}
+.home-container .mobile-apps-container .mobile-apps .h1{
+  margin: 0;
+  color:#8b0000;
+  font-weight: bold;
+  font-size: 32px;
+}
+
+@media (max-width:1200px){
+    .home-container .What-You-Get-Section .What-You-Get-Inner-Container{
+      width: 80%;
+      padding: 20px;
+    }
+    .home-container .How-To-Get-Start .How-To-Get-Start-Inner-Container{
+      width: 90%;
+    }
+    .home-container .filter-container .filter{
+        width:90%;
+    }
+    .home-container .icons-bar{
+        width:80%;
+    }
+}
+@media (max-width:1024px){
+    .home-container .What-You-Get-Section .What-You-Get-Inner-Container{
+      width: 90%;
+    }
+    .home-container .filter-container .filter{
+        width:95%;
+    }
+    .home-container .icons-bar{
+        width:70%;
+    }
+    .home-container .mobile-apps-container .mobile-apps{
+      width: 90%;
+    }
+    .home-container .mobile-apps-container .mobile-apps .h1{
+      font-size: 35px;
+    }
+}
+@media (max-width:980px){
+    .home-container .filter-container .filter{
+        width:100%;
+    }
+    .home-container .icons-bar{
+        width:80%;
+    }
+}
+@media (max-width:938px){
+    .home-container .filter-container .filter{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .home-container .filter-container .filter{
+        width:80%;
+    }
+    .home-container .filter .dropdown{
+        width:100%;
+    }
+}
+@media(max-width:768px){
+  .home-container .What-You-Get-Section .What-You-Get-Inner-Container{
+    width: 95%;
+  }
+  .home-container .mobile-apps-container .mobile-apps{
+    width: 100%;
+  }
+  .home-container .mobile-apps-container .mobile-apps .h1{
+    font-size: 25px;
+  }
+}
+@media(max-width:540px){
+  .home-container .What-You-Get-Section .What-You-Get-Inner-Container .main-box{
+    display: flex;
+    flex-direction: column;
+  }
+  .home-container .What-You-Get-Section .What-You-Get-Inner-Container .main-box .second{
+    order:-1;
+  }
+
+  .home-container .What-You-Get-Section .What-You-Get-Inner-Container .main-box .box-1,.box-2{
+    width: 100%;
+    padding: 30px;
+  }
+  .home-container .mobile-apps-container .mobile-apps .h1{
+    font-size: 16px;
+  }
+}
+
+@media(max-width:360px){
+  .home-container .mobile-apps .h1{
+    font-size: 12px;
+  }
+
+}
+
+
+.menu-item {
+    padding: 0 40px;
+    margin: 5px 10px;
+    user-select: none;
+    cursor: pointer;
+    border: none;
+  }
+  .menu-item-wrapper.active {
+    border: 1px blue solid;
+  }
+  .menu-item.active {
+    border: 1px green solid;
+  }
+   
+  .scroll-menu-arrow {
+    padding: 20px;
+    cursor: pointer;
+  }
+/* 
+  .Demo__map-maker-icon {
+    color: #FD6C6C;
+  }
+  
+  .Demo__github-icon {
+    font-size: 24px;
+  }
+  
+  .Demo__github-link {
+    color: #262626;
+    font-size: 20px;
+  }
+  
+  .Demo__github-link:hover,
+  .Demo__github-link:active {
+    color: #4078c0;
+    text-decoration: none;
+  }
+  
+  .suggestion-icon {
+    margin-right: 8px;
+  }
+  
+  .autocomplete-dropdown-container {
+    width: 90%;
+    max-width: 500px;
+    margin: 40px auto 0;
+  }
+  
+  
+  .location-search-input,
+  .location-search-input:focus,
+  .location-search-input:active {
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+    border: honeydew;
+    display: block;
+    width: 100%;
+    padding: 16px;
+    font-size: 16px;
+    border-radius: 2px;
+    outline: none;
+  }
+  
+  .clear-button,
+  .clear-button:active,
+  .clear-button:focus {
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    outline: none;
+    font-weight: 600;
+    color: #999;
+  }
+  
+  .autocomplete-container {
+    border-bottom: honeydew;
+    border-left: honeydew;
+    border-right: honeydew;
+    border-top: 1px solid #e6e6e6;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    border-radius: 0 0 2px 2px;
+  }
+  
+  .suggestion-item {
+    padding: 8px;
+    text-align: left;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  
+  .suggestion-item--active {
+    background-color: #fafafa;
+  }
+  
+  .dropdown-footer {
+    display: flex;
+    justify-content: flex-end;
+    padding: 4px;
+  }
+  
+  .dropdown-footer-image {
+    display: inline-block;
+    width: 150px;
+  }
+  
+  .Demo__spinner {
+    color: #18bc9c;
+    font-size: 30px;
+  }
+  
+  .Demo__error-message {
+    color: red;
+  }
+  
+  .Demo__geocode-result-header {
+    font-size: 20px;
+    color: #222222;
+  }
+   */
+
+   

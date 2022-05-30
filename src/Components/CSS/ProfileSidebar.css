@@ -1,0 +1,32 @@
+.Profile-sidebar{
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    width: 25%;
+    border-right: solid 1px lightgray;
+}
+.Profile-sidebar .user-detail{
+    display: flex;
+    align-items: center;
+    background-color:darkcyan;
+    padding: 20px;
+}
+.Profile-sidebar .Menu:hover{
+    background-color: #eeeeee;
+}
+.Profile-sidebar .side-menu{
+   display: none;
+}
+@media (max-width:1200px)
+{
+    .Profile-sidebar{
+        
+        width: 30%;
+    }
+}
+@media (max-width:768px)
+{
+    .Profile-sidebar{
+        display: none;
+    }
+}

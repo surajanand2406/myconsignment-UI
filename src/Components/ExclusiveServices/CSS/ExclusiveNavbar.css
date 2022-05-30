@@ -1,0 +1,37 @@
+.ExclusiveServices-Container{
+    display: flex;
+    flex-direction: column;
+}
+.ExclusiveServices-Container .ExclusiveServices-Nav{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding:10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: darkcyan;
+}
+.ExclusiveServices-Container .ExclusiveServices-Nav .nav-menu{
+    display: none;
+}
+.ExclusiveServices-Container .ExclusiveServices-Nav .ExclusiveServices-Nav-menu{
+    display: flex;
+    align-items: center;
+}
+.ExclusiveServices-Container .ExclusiveServices-Nav .ExclusiveServices-Nav-menu .link:hover{
+    text-decoration: underline;
+}
+.exlusiveLogo{
+    filter: invert(1%) sepia(1%) saturate(1%) hue-rotate(1deg) brightness(1000%) contrast(80%);
+
+}
+@media (max-width:768px)
+{
+    .ExclusiveServices-Container .ExclusiveServices-Nav .nav-menu{
+        
+        display: inline;
+    }
+    .ExclusiveServices-Container .ExclusiveServices-Nav .ExclusiveServices-Nav-menu{
+        display: none;
+    }
+}

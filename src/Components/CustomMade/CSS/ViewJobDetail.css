@@ -1,0 +1,52 @@
+.ViewJob-Detail-container{
+    flex:1;
+ }
+ .ViewJob-Detail-container .ViewJob-Detail-inner-container{
+ 
+     display: flex;
+     justify-content: center;
+ 
+ }
+ .ViewJob-Detail-container .ViewJob-Detail-inner-container .ViewJob-Detail-body{
+     display: flex;
+     width: 80%;
+     margin-top: 80px;
+ }
+ .ViewJob-Detail-container .ViewJob-Detail-inner-container .ViewJob-Detail-body img{
+     height: 500px;
+     width: 500px;
+ }
+ .ViewJob-Detail-container .ViewJob-Detail-inner-container .ViewJob-Detail-body .ViewJob-Detail-item-detail .h3{
+     font-weight: bold;
+     margin-right: 5px;
+ }
+ @media (max-width:1240px){
+ 
+     .ViewJob-Detail-container .ViewJob-Detail-inner-container .ViewJob-Detail-body{
+         width: 90%;
+     }
+ 
+ }
+ @media (max-width:1080px){
+ 
+    .ViewJob-Detail-container .ViewJob-Detail-inner-container .ViewJob-Detail-body{
+        width: 90%;
+    }
+ 
+ }
+
+ @media (max-width:940px){
+ 
+     .ViewJob-Detail-container .ViewJob-Detail-inner-container .ViewJob-Detail-body{
+         flex-direction: column;
+         align-items: center;
+         width:80%;
+     }
+ }
+ @media (max-width:540px){
+ 
+    .ViewJob-Detail-container .ViewJob-Detail-inner-container .ViewJob-Detail-body img{
+        height: 300px;
+        width: 300px;
+    }
+}

@@ -1,0 +1,50 @@
+.external-store-container{
+    display: flex;
+    flex-direction: column;
+}
+.external-store-container .external-store-body-container{
+
+    display:flex;
+    justify-content: center;
+    width:100%;
+
+}
+
+.external-store-container .external-store-body-container .external-store-body{
+    display: flex;
+    flex-direction: column;
+    width:80%;
+    padding: 50px;
+}
+.external-store-container .external-store-body-container .external-store-body .listings-filter{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #eeeeee;
+}
+.external-store-container .external-store-body-container .external-store-body .listings-filter .filter{
+    width:33%;
+}
+.shippment:hover{
+    cursor: pointer;
+    border:solid 1px lightgray;
+    box-shadow: 1px 1px 0px 1px lightgray;
+}
+
+@media(max-width:540px)
+{
+    .external-store-container .external-store-body-container .external-store-body{
+        width:100%;
+        padding: 20px;
+    }
+    .external-store-container .external-store-body-container .external-store-body .listings-filter{
+        display: flex;
+        flex-direction: column;
+    }
+    .external-store-container .external-store-body-container .external-store-body .listings-filter .filter{
+        width:100%;
+    }
+}

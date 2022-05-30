@@ -1,0 +1,82 @@
+.Jobs-Container{
+    display: flex;
+    flex-direction: column;
+}
+.Jobs-Container .Jobs-body-container{
+    display: flex;
+    justify-content: center;
+    width:100%;
+}
+.Jobs-Container .Jobs-body-container .Jobs-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width:80%;
+    margin-top: 50px;
+    padding-bottom: 20px;
+}
+.Jobs-Container .Jobs-body-container .Jobs-body .Jobs-body-head{
+    display: flex;
+    justify-content: space-between;
+}
+.Jobs-Container .Jobs-body-container .Jobs-body .Jobs-body-head .search-box{
+    width:500px;
+    height: 40px;
+}
+.Jobs-Container .Jobs-body-container .Jobs-body .Jobs-body-filter{
+    display: flex;
+    align-items: center;
+    padding:20px;
+    background-color: #eeeeee;
+}
+.Jobs-Container .Jobs-body-container .Jobs-body .Jobs-body-filter .select-box,.country-select-box,.price-filter {
+   width: 25%;
+}
+.Jobs-Container .Jobs-body-container .Jobs-body .Jobs-body-filter .country-select-box,.price-filter {
+    margin-left: 5%;
+ }
+.Jobs-Container .Jobs-body-container .Jobs-body .Jobs-body-request{
+    display: flex;
+    flex-direction: column;
+}
+.Jobs-Container .Jobs-body-container .Jobs-body .Jobs-body-filter .btn{
+
+    width:150px;
+    color:white;
+}
+
+@media (max-width:1024px){
+    .Jobs-Container .Jobs-body-container .Jobs-body{
+        width:90%;
+    }
+}
+@media (max-width:768px){
+    .Jobs-Container .Jobs-body-container .Jobs-body .Jobs-body-filter .select-box,.country-select-box,.price-filter {
+        width: 100%;
+     }
+     .Jobs-Container .Jobs-body-container .Jobs-body .Jobs-body-filter .country-select-box,.price-filter {
+        margin-left: 0px;
+        margin-top: 10px;
+     }
+    .Jobs-Container .Jobs-body-container .Jobs-body .Jobs-body-head .search-box{
+        width:300px;
+        height: 40px;
+    }
+    .Jobs-Container .Jobs-body-container .Jobs-body .Jobs-body-filter{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+@media (max-width:550px){
+    .Jobs-Container .Jobs-body-container .Jobs-body .Jobs-body-head{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    .Jobs-Container .Jobs-body-container .Jobs-body .Jobs-body-filter .btn{
+
+        width:120px;
+        color:white;
+    }
+}

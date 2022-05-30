@@ -1,0 +1,99 @@
+.chat-container{
+    display: flex;
+}
+.chat-container .chat-contact-area{
+    width: 25%;
+    height: 100%;
+    border-right: solid 2px lightgray ;
+}
+.chat-container .chat-messege-area{
+    width:75%;
+}
+.contact-search-box{
+    display: flex;
+    align-items: center;
+    flex-grow: 12;
+    height: 100%;
+    background-color: #eeeeee;
+}
+.chat-container .chat-contact-area .chat-contact-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.chat-container .chat-contact-area .chat-contact-body .chat-contact{
+   display: flex;
+   width: 90%;
+   margin-top: 10px;
+   margin-bottom: 5px;
+}
+.contact-search-box input{
+    width: 100%;
+    background-color: #eeeeee;
+    padding-left: 10px;
+    font-size: 18px;
+    border: none;
+}
+.contact-search-box input:focus{
+    outline: none;
+    border: none;
+}
+.messeges-header{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: solid 2px lightgray;
+    box-shadow:0px 2px 8px #888888;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.chat-container .chat-messege-area .chat-messege-body{
+   display: flex;
+   justify-content: center;
+
+}
+.chat-container .chat-messege-area .chat-messege-body .chat-messege{
+    display: flex;
+    flex-direction: column;
+    width:95%;
+    margin-top: 10px;
+}
+.messege-send-box{
+    display: flex;
+    align-items: center;
+    flex-grow: 12;
+    height: 100%;
+    background-color: #eeeeee;
+}
+.messege-send-box input{
+    width: 100%;
+    background-color: #eeeeee;
+    padding-left: 10px;
+    font-size: 18px;
+    border: none;
+}
+.messege-send-box input:focus{
+    outline: none;
+    border: none;
+}
+@media(min-width:780px){
+    .messeges-header{
+        flex-direction: column;
+    }
+    .chat-container .chat-messege-area .cog{
+        display: none;
+    }
+    .chat-container .chat-messege-area .address-card{
+        display: none;
+    }
+}
+@media(max-width:780px){
+    .chat-container .chat-contact-area{
+        display: none;
+    }
+    .chat-container .chat-messege-area{
+        width:100%;
+    }
+}

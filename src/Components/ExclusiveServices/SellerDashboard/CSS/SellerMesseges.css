@@ -1,0 +1,261 @@
+.seller-messeges-container{
+    display: flex;
+    flex-direction: column;
+}
+.seller-messeges-container .seller-messeges-body-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+.seller-messeges-container .seller-messeges-body-container .seller-messeges-body{
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    width:80%;
+    height: 80vh;
+    border:solid 1px lightgray;
+}
+
+.seller-messeges-container .seller-messeges-body-container .seller-messeges-body .chat-header-for-small-device{
+   display: none;
+}
+
+/*Chat List Styling */
+.seller-messeges-container .seller-messeges-body-container .seller-messeges-body .seller-messeges-body-list{
+    width:30%;
+    border-right: solid 1px lightgray;
+    display: flex;
+    flex-direction: column;
+}
+.seller-messeges-container .seller-messeges-body-container .seller-messeges-body .seller-messeges-body-list .list-header{
+    height: 10vh;
+    background-color: #B17E4E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.seller-messeges-container .seller-messeges-body-container .seller-messeges-body .seller-messeges-body-list .list-body{
+    height: 82vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.seller-messeges-container .seller-messeges-body-container .seller-messeges-body .seller-messeges-body-list .list-body .chat{ 
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-bottom: solid 1px #c9c7c7 ;
+}
+.seller-messeges-container .seller-messeges-body-container .seller-messeges-body .seller-messeges-body-list .list-body .chat:hover{ 
+    background-color: #eeeeee;
+    cursor: pointer;
+}
+
+.seller-messeges-container .seller-messeges-body-container .seller-messeges-body .seller-messeges-body-list .list-footer{
+    height: 8vh;
+    border-top: solid 1px lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:5px
+}
+.seller-messeges-container .seller-messeges-body-container .seller-messeges-body .seller-messeges-body-list .list-footer .footer-search{
+    border: solid 1px gray;
+    width: 100%;   
+}
+
+
+/*Messeges Styling */
+.seller-messeges-container .seller-messeges-body-container .seller-messeges-body .seller-messeges-body-chat{
+    width:70%;
+    border-right: solid 1px lightgray;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.seller-messeges-container .seller-messeges-body-container .seller-messeges-body .seller-messeges-body-chat .chat-header{
+    height: 10vh;
+    background-color: #B17E4E;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.seller-messeges-container .seller-messeges-body-container .seller-messeges-body .seller-messeges-body-chat .chat-header .Menu-Icon{
+    display: none;
+}
+.seller-messeges-container .seller-messeges-body-container .seller-messeges-body .seller-messeges-body-chat .chat-body{
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 82vh;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+}
+.seller-messeges-container .seller-messeges-body-container .seller-messeges-body .seller-messeges-body-chat .chat-body .chat-body-user1{
+    width: 100%;
+}
+.seller-messeges-container .seller-messeges-body-container .seller-messeges-body .seller-messeges-body-chat .chat-body .chat-body-user1 .first-user-message{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+.seller-messeges-container .seller-messeges-body-container .seller-messeges-body .seller-messeges-body-chat .chat-body .chat-body-user1 .first-user-message .avatar{
+    width: 8%;
+}
+.seller-messeges-container .seller-messeges-body-container .seller-messeges-body .seller-messeges-body-chat .chat-body .chat-body-user1 .first-user-message .msg{
+    width: 92%;
+    display: flex;
+}
+.seller-messeges-container .seller-messeges-body-container .seller-messeges-body .seller-messeges-body-chat .chat-body .chat-body-user2{
+    width: 100%;
+}
+.seller-messeges-container .seller-messeges-body-container .seller-messeges-body .seller-messeges-body-chat .chat-body .chat-body-user2 .second-user-message{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+.seller-messeges-container .seller-messeges-body-container .seller-messeges-body .seller-messeges-body-chat .chat-body .chat-body-user2 .second-user-message .avatar{
+    width: 8%;
+    display: flex;
+    justify-content: flex-end;
+}
+.seller-messeges-container .seller-messeges-body-container .seller-messeges-body .seller-messeges-body-chat .chat-body .chat-body-user2 .second-user-message .msg{
+   width: 92%;
+   display: flex;
+   justify-content: flex-end;
+}
+
+.seller-messeges-container .seller-messeges-body-container .seller-messeges-body .seller-messeges-body-chat .View:hover,img:hover{
+
+   cursor: pointer;
+}
+
+.seller-messeges-container .seller-messeges-body-container .seller-messeges-body .seller-messeges-body-chat .chat-footer{
+    height: 8vh;
+    border-top: solid 1px lightgray;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding:5px
+}
+.seller-messeges-container .seller-messeges-body-container .seller-messeges-body .seller-messeges-body-chat .chat-footer .footer-input-box{ 
+    display: flex;
+    align-items: center;
+    border: solid 1px gray;
+    width: 70%;
+    margin-right: 15px;
+}
+.seller-messeges-container .seller-messeges-body-container .seller-messeges-body .seller-messeges-body-chat .chat-footer .footer-input-box .send-message-box{ 
+    width: 80%;
+}
+
+
+@media(max-width:1024px)
+{
+    .seller-messeges-container .seller-messeges-body-container .seller-messeges-body{
+        width: 95%;
+    }
+}
+
+@media(max-width:768px)
+{
+    .seller-messeges-container .seller-messeges-body-container .seller-messeges-body .seller-messeges-body-chat .chat-body .chat-body-user1 .first-user-message .avatar{
+        width: 12%;
+    }
+    .seller-messeges-container .seller-messeges-body-container .seller-messeges-body .seller-messeges-body-chat .chat-body .chat-body-user1 .first-user-message .msg{
+        width: 88%;
+    }
+    .seller-messeges-container .seller-messeges-body-container .seller-messeges-body .seller-messeges-body-chat .chat-body .chat-body-user2 .second-user-message .avatar{
+        width: 12%;
+    }
+    .seller-messeges-container .seller-messeges-body-container .seller-messeges-body .seller-messeges-body-chat .chat-body .chat-body-user2 .second-user-message .msg{
+       width: 88%;
+    }
+    
+}
+
+@media(max-width:576px)
+{
+    .seller-messeges-container .seller-messeges-body-container .seller-messeges-body .seller-messeges-body-chat .chat-footer .footer-input-box{ 
+        width: 100%;
+    }
+    .seller-messeges-container .seller-messeges-body-container .seller-messeges-body .seller-messeges-body-chat .chat-body{
+        height: 61vh;
+    }
+    .seller-messeges-container .seller-messeges-body-container .seller-messeges-body .seller-messeges-body-chat{
+        width:100%;
+    }
+    .seller-messeges-container .seller-messeges-body-container .seller-messeges-body .seller-messeges-body-list{
+       display: none;
+    }
+    .seller-messeges-container .seller-messeges-body-container .seller-messeges-body{
+        display: flex;
+        flex-direction: column;
+    }
+    .seller-messeges-container .seller-messeges-body-container .seller-messeges-body .chat-header-for-small-device{
+        height: 10vh;
+        background-color: #B17E4E;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 15px;
+        padding-right: 15px;
+        width:100%;
+    }
+    .seller-messeges-container .seller-messeges-body-container .seller-messeges-body .seller-messeges-body-chat .chat-header{
+        display: none;
+     }
+    .seller-messeges-container .seller-messeges-body-container .seller-messeges-body .seller-messeges-body-chat{
+        width:100%;
+    }
+    .seller-messeges-container .seller-messeges-body-container .seller-messeges-body .seller-messeges-body-chat .chat-footer{
+        height: 15vh;
+        display:flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .seller-messeges-container .seller-messeges-body-container .seller-messeges-body .seller-messeges-body-chat .chat-footer  .send-message-box{ 
+        width: 100%;
+        border: solid 1px gray;
+        margin-right:0;
+    }
+
+    .seller-messeges-container .seller-messeges-body-container .seller-messeges-body .seller-messeges-body-chat .chat-body .chat-body-user1 .first-user-message .avatar{
+        width: 15%;
+    }
+    .seller-messeges-container .seller-messeges-body-container .seller-messeges-body .seller-messeges-body-chat .chat-body .chat-body-user1 .first-user-message .msg{
+        width: 85%;
+    }
+    .seller-messeges-container .seller-messeges-body-container .seller-messeges-body .seller-messeges-body-chat .chat-body .chat-body-user2 .second-user-message .avatar{
+        width: 15%;
+    }
+    .seller-messeges-container .seller-messeges-body-container .seller-messeges-body .seller-messeges-body-chat .chat-body .chat-body-user2 .second-user-message .msg{
+       width: 85%;
+    }
+    .seller-messeges-container .seller-messeges-body-container .seller-messeges-body{
+        height: 85vh;
+    }
+    
+}
+
+@media(max-width:360px)
+{
+    .seller-messeges-container .seller-messeges-body-container .seller-messeges-body .seller-messeges-body-chat .chat-body .chat-body-user1 .first-user-message .avatar{
+        width: 18%;
+    }
+    .seller-messeges-container .seller-messeges-body-container .seller-messeges-body .seller-messeges-body-chat .chat-body .chat-body-user1 .first-user-message .msg{
+        width: 82%;
+    }
+    .seller-messeges-container .seller-messeges-body-container .seller-messeges-body .seller-messeges-body-chat .chat-body .chat-body-user2 .second-user-message .avatar{
+        width: 18%;
+    }
+    .seller-messeges-container .seller-messeges-body-container .seller-messeges-body .seller-messeges-body-chat .chat-body .chat-body-user2 .second-user-message .msg{
+       width: 82%;
+    }
+    
+}

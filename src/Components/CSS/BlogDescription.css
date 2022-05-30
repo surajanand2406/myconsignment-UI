@@ -1,0 +1,78 @@
+.Blog-Description-Container{
+    display: flex;
+    flex-direction: column;
+}
+.Blog-Description-Container .Blog-Description-Body-Container{
+    padding: 20px;
+}
+.Blog-Description-Container .Blog-Description-Body-Container .Blog-Description-Body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Blog-Description-Container .Blog-Description-Body-Container .Blog-Description-Body .carousel-body{
+    position: relative;
+}
+.Blog-Description-Container .Blog-Description-Body-Container .Blog-Description-Body .carousel-body img{
+   width: 100%;
+   height: 500px;
+}
+.Blog-Description-Container .Blog-Description-Body-Container .Blog-Description-Body .carousel-body .carousel{
+    position: absolute;
+    top:0%;
+    left: 60%;
+    background-color: black;
+    opacity: 0.8;
+    width: 40%;
+    height: 100%;    
+    display:flex;
+    justify-content:center;
+    align-items:center; 
+}
+.Blog-Description-Container .Blog-Description-Body-Container .Blog-Description-Body .Blog-Description-section{
+    width:80%;
+    padding:50px;
+}
+.Blog-Description-Container .Blog-Description-Body-Container .Blog-Description-Body .Blog-Description-section .blog-container .blog{
+    overflow-x: auto;
+}
+.Blog-Description-Container .Blog-Description-Body-Container .Blog-Description-Body .Blog-Description-section .blog-container .blog img{
+    width: 100%;
+}
+@media(max-width:1024px)
+{
+    .Blog-Description-Container .Blog-Description-Body-Container .Blog-Description-Body .carousel-body .carousel{
+        width: 50%;
+        left: 50%;
+    }
+}
+@media(max-width:768px)
+{
+
+    .Blog-Description-Container .Blog-Description-Body-Container .Blog-Description-Body .carousel-body img{
+        height: 400px;
+     }
+    .Blog-Description-Container .Blog-Description-Body-Container .Blog-Description-Body .Blog-Description-section{
+        width:100%;
+        padding:30px;
+    }
+    .Blog-Description-Container .Blog-Description-Body-Container .Blog-Description-Body .Blog-Description-section{
+        width:100%;
+    }
+}
+@media(max-width:576px)
+{
+    .Blog-Description-Container .Blog-Description-Body-Container .Blog-Description-Body .carousel-body img{
+        height: 300px;
+     }
+    .Blog-Description-Container .Blog-Description-Body-Container .Blog-Description-Body .carousel-body .carousel{
+        width: 100%;
+        left: 0%;
+    }
+}
+@media(max-width:375px)
+{
+    .Blog-Description-Container .Blog-Description-Body-Container .Blog-Description-Body .carousel-body img{
+        height: 250px;
+     }
+}

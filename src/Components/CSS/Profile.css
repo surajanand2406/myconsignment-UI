@@ -1,0 +1,25 @@
+.Profile-container{
+    display: flex;
+    flex-direction: column;
+}
+.Profile-container .profile-body-container{
+    display:flex;
+    justify-content: center;
+    width:100%;
+}
+.Profile-container .profile-body-container .profile-body{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    overflow: auto;
+}
+.Profile-container .profile-body-container .profile-body .menu:hover{
+    cursor: pointer;
+}
+
+@media (max-width:1200px)
+{ 
+    .Profile-container .profile-body-container .profile-body{ 
+        width:70%;
+    }
+}

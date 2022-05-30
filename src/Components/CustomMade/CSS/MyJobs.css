@@ -1,0 +1,15 @@
+
+.my-jobs-container{
+    display: flex;
+    flex-direction: column;
+}
+.my-jobs-container .my-jobs-body-container{
+    display: flex;
+    justify-content: center;
+}
+.my-jobs-container .my-jobs-body-container .my-jobs-body{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}

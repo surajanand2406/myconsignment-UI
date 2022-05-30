@@ -1,0 +1,206 @@
+/** @format */
+
+.productStore {
+  display: flex;
+  justify-content: space-between;
+  .leftStore {
+    flex: 0 0 23%;
+    float: left;
+    border: 1px solid #f0f0f0;
+    h3 {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      text-transform: uppercase;
+      color: #343232;
+      margin-bottom: 10px;
+    }
+    ul {
+      li {
+        margin-bottom: 8px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        color: #5b5b5b;
+        label {
+          margin-right: 5px;
+        }
+        a {
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          color: #5b5b5b;
+        }
+      }
+    }
+    .filterSeller {
+      .filterHead {
+        background: #5bb98e;
+        padding: 12px 20px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        color: #ffffff;
+        display: inline-block;
+        width: 100%;
+      }
+      .catagry {
+        padding: 20px;
+      }
+    }
+    .pricer,
+    .colorItem {
+      padding: 0px 18px 0px 20px;
+    }
+  }
+}
+.rightStore {
+  flex: 1 1 auto;
+  float: left;
+  margin-left: 38px;
+  padding-left: 10px;
+  margin-top: 15px;
+  .storeName {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .storeChoice {
+      display: flex;
+      .storeDropdown {
+        margin-right: 20px;
+        .ldropdownlabel {
+          padding-right: 10px;
+          border-right: solid 1px #d9d9d9;
+          display: inline-block;
+          margin: 6px;
+          margin-left: 0;
+        }
+        .ant-select-single.ant-select-sm:not(.ant-select-customize-input)
+          .ant-select-selector {
+          padding: 0 3px;
+        }
+      }
+    }
+    .storeDropdown {
+      display: flex;
+      border: 1px solid #d9d9d9;
+      padding: 0px 0px 0px 10px;
+      align-items: center;
+      .ant-select.ant-select-sm.ant-select-single.ant-select-show-arrow {
+        width: 115px !important;
+        border: transparent !important;
+        outline: none !important;
+      }
+      .ant-select.ant-select-sm.ant-select-focused.ant-select-single.ant-select-show-arrow {
+        border: transparent !important;
+        outline: none !important;
+      }
+      .ant-select-single:not(.ant-select-customize-input) .ant-select-selector {
+        border: transparent !important;
+        outline: none !important;
+      }
+    }
+  }
+  .allItemList {
+    margin: 10px 0px;
+
+    .ant-card {
+      border: solid 1px #e5e5e5;
+      margin-bottom: 20px;
+    }
+    .ant-card-body {
+      display: flex;
+      flex-direction: row;
+      padding: 8px 24px;
+      align-items: center;
+      .itemImage {
+        flex: 0 0 15%;
+        display: flex;
+        justify-content: center;
+        margin-right: 15px;
+      }
+      .productHeading {
+        display: flex;
+        align-items: center;
+        h4 {
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          color: #211f1f;
+        }
+        .itemPrice {
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 20px;
+          color: #de720e;
+          margin-left: 8px;
+        }
+      }
+      .itemParag {
+        p {
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          color: #727272;
+        }
+        .itemSize {
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          color: #222020;
+          margin-bottom: 8px;
+        }
+        .ant-btn {
+          width: auto;
+          background: #5bb98e;
+          border-radius: 100px;
+          color: #ffffff;
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 12px;
+          text-transform: uppercase;
+          width: 117px;
+          transition: all ease 0.4s;
+          &:hover,
+          &:active,
+          &:focus {
+            border-color: #51b587;
+            outline: none;
+            box-shadow: none;
+            background: #51b587;
+            transition: all ease 0.4s;
+          }
+        }
+      }
+      .actionSec {
+        flex: 0 0 15%;
+        align-self: baseline;
+        text-align: end;
+        margin-top: 10px;
+        a {
+          i {
+            background: url("../../imgs/compare.png") no-repeat;
+            width: 26px;
+            height: 17px;
+            background-size: contain;
+            background-position: center center;
+            display: inline-block;
+            margin-right: 15px;
+          }
+          .anticon-heart {
+            color: #545cdc;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+.seller-jobs-Container{
+    display: flex;
+    flex-direction: column;
+}
+.seller-jobs-Container .seller-jobs-Body-Container{
+    display: flex;
+    width:100%;
+}
+.seller-jobs-Container .seller-jobs-Body-Container .seller-jobs-Body{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    padding:30px;
+    height: 92vh;
+    overflow-y: auto;
+}
+
+@media(max-width:1200px){
+    .seller-jobs-Container .seller-jobs-Body-Container .seller-jobs-Body{
+        width: 75%;
+    }
+}
+
+@media(max-width:992px){
+    .seller-jobs-Container .seller-jobs-Body-Container .seller-jobs-Body{
+        width: 95%;
+        padding:10px;
+    }
+}
+

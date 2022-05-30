@@ -1,0 +1,53 @@
+.Add-Service-Container{
+    display: flex;
+    flex-direction: column;
+}
+.Add-Service-Container .Add-Service-Body-Container{
+    display: flex;
+    width:100%;
+}
+.Add-Service-Container .Add-Service-Body-Container .Add-Service-Body{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    padding:30px;
+    height: 92vh;
+    overflow-y: auto;
+}
+.Add-Service-Container .Add-Service-Body-Container .Add-Service-Body .Add-Service{
+    display: flex;
+    justify-content: center;
+}
+.Add-Service-Container .Add-Service-Body-Container .Add-Service-Body .Add-Service .Add-Service-Form{
+    width:60%;
+}
+
+@media(max-width:1200px){
+    .Add-Service-Container .Add-Service-Body-Container .Add-Service-Body{
+        width: 75%;
+    }
+}
+@media(max-width:1024px){
+    .Add-Service-Container .Add-Service-Body-Container .Add-Service-Body .Add-Service .Add-Service-Form{
+        width:90%;
+    }
+}
+@media(max-width:992px){
+    .Add-Service-Container .Add-Service-Body-Container .Add-Service-Body{
+        width: 100%;
+    }
+    .Add-Service-Container .Add-Service-Body-Container .Add-Service-Body .Add-Service .Add-Service-Form{
+        width:80%;
+    }
+}
+@media(max-width:576px)
+{
+    .Add-Service-Container .Add-Service-Body-Container .Add-Service-Body .Add-Service .Add-Service-Form{
+        width:100%;
+    }
+    .Add-Service-Container .Add-Service-Body-Container .Add-Service-Body{
+        padding-left: 10;
+        padding-right: 10;
+    }
+
+}

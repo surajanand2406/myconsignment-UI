@@ -1,0 +1,44 @@
+.sponsor-container{
+    display: flex;
+    flex-direction: column;
+}
+.sponsor-container .sponsor-body-container{
+    display: flex;
+    justify-content: center;
+}
+.sponsor-container .sponsor-body-container .sponsor-body{
+    display: flex;
+    flex-direction: column;
+    width:90%;
+    padding: 20px;
+}
+.sponsor-container .sponsor-body-container .sponsor-body .sponsor-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.sponsor-container .sponsor-body-container .sponsor-body .sponsor-graph-area{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.sponsor-container .sponsor-body-container .sponsor-body .sponsor-progress-graph-area{
+    display: flex;
+    justify-content: space-between;
+    padding:50px;
+}
+.sponsor-container .sponsor-body-container .sponsor-body .sponsor-latest-update-section{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+}
+.sponsor-container .sponsor-body-container .sponsor-body .sponsor-latest-update-section .menu:hover{
+   cursor: pointer;
+}
+.sponsor-container .sponsor-body-container .sponsor-body .sponsor-latest-update-section .sponsor-latest-update-News-section{
+    border-bottom: solid 1px lightgray;
+    padding-bottom: 10px;
+}

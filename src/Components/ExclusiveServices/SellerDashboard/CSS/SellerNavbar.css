@@ -1,0 +1,34 @@
+.SellerNav-Container{
+    display: flex;
+    flex-direction: column;
+}
+.SellerNav-Container .SellerNav-Nav{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding:10px;
+    height: 8vh;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: darkcyan;
+}
+.SellerNav-Container .SellerNav-Nav .nav-menu{
+    display: none;
+}
+.SellerNav-Container .SellerNav-Nav .SellerNav-Nav-menu{
+    display: flex;
+    align-items: center;
+}
+.SellerNav-Container .SellerNav-Nav .SellerNav-Nav-menu .link:hover{
+    text-decoration: underline;
+}
+
+@media (max-width:992px)
+{
+    .SellerNav-Container .SellerNav-Nav .nav-menu{
+        display: inline;
+    }
+    .SellerNav-Container .SellerNav-Nav .title{
+        display: none;
+    }
+}

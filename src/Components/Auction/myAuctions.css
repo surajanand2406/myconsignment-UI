@@ -1,0 +1,33 @@
+.Card{
+    width:90%;
+    height: 200px;
+    border: solid 1px gray;
+    display: flex;
+    align-items: flex-start;
+    border-radius: 10px;
+}
+
+.Card .card-image{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    height: 100%;
+    border-right:solid 1px gray;
+    box-sizing: border-box;
+}
+
+.Card .card-data{
+    padding: 15px;
+    width: 75%;
+    height: 100%;
+    background-color: #fafafa;
+    border-radius: 0px 10px 10px 0px;
+    overflow: hidden;
+}
+.Card .card-data .card-data-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

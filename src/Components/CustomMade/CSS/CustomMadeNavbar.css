@@ -1,0 +1,33 @@
+.CustomMade-Container{
+    display: flex;
+    flex-direction: column;
+}
+.CustomMade-Container .CustomMade-Nav{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding:10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: darkcyan;
+}
+.CustomMade-Container .CustomMade-Nav .nav-menu{
+    display: none;
+}
+.CustomMade-Container .CustomMade-Nav .CustomMade-Nav-menu{
+    display: flex;
+    align-items: center;
+}
+.custom-item:hover{
+    text-decoration: underline;
+}
+@media (max-width:678px)
+{
+    .CustomMade-Container .CustomMade-Nav .nav-menu{
+        
+        display: inline;
+    }
+    .CustomMade-Container .CustomMade-Nav .CustomMade-Nav-menu{
+        display: none;
+    }
+}

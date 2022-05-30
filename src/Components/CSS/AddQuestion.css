@@ -1,0 +1,10 @@
+.AddQuestion-Container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+}
+.AddQuestion-Container .AddQuestion-body{
+    width: 50%;
+    padding: 20px;
+}

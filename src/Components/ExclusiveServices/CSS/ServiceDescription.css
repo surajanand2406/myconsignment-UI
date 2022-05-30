@@ -1,0 +1,71 @@
+.ServiceDes-Container{
+    display: flex;
+    flex-direction: column;
+}
+.ServiceDes-Container .ServiceDes-Body-Container{
+    display: flex;
+    justify-content: center;
+    width:100%;
+}
+.ServiceDes-Container .ServiceDes-Body-Container .ServiceDes-Body{
+    width:80%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+.ServiceDes-Container .ServiceDes-Body-Container .ServiceDes-Body .Service-Description{
+    width:70%;
+    margin-bottom: 50px;
+    display: flex;
+}
+.ServiceDes-Container .ServiceDes-Body-Container .ServiceDes-Body .Service-Description .Service{
+    width:100%;
+}
+.ServiceDes-Container .ServiceDes-Body-Container .ServiceDes-Body .Service-Description .Service .About-Seller{
+    display: none;
+}
+.ServiceDes-Container .ServiceDes-Body-Container .ServiceDes-Body .Seller-Description{
+    width:30%;
+    padding-top: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.ServiceDes-Container .ServiceDes-Body-Container .ServiceDes-Body .Seller-Description .Seller-Description-Card{
+    width:100%;
+    border: solid 1px lightgray;
+}
+
+@media (max-width:1400px)
+{
+    .ServiceDes-Container .ServiceDes-Body-Container .ServiceDes-Body{
+        width:95%;
+    }
+}
+@media (max-width:1200px)
+{
+    .ServiceDes-Container .ServiceDes-Body-Container .ServiceDes-Body .Service-Description .Service{
+        width:90%;
+    }
+
+}
+
+@media (max-width:968px)
+{
+    .ServiceDes-Container .ServiceDes-Body-Container .ServiceDes-Body .Seller-Description{
+        display: none;
+    }
+    .ServiceDes-Container .ServiceDes-Body-Container .ServiceDes-Body .Service-Description .Service .About-Seller{
+        display: block;
+    }
+    .ServiceDes-Container .ServiceDes-Body-Container .ServiceDes-Body .Service-Description{
+        width:80%;
+    }
+}
+@media (max-width:768px)
+{
+    .ServiceDes-Container .ServiceDes-Body-Container .ServiceDes-Body .Service-Description{
+        width:95%;
+    }
+
+}

@@ -1,0 +1,62 @@
+.ProfileSetting-container{
+    display: flex;
+    flex-direction: column;
+}
+.ProfileSetting-container .profileSetting-body-container{
+    display:flex;
+    justify-content: center;
+    width:100%;
+}
+.ProfileSetting-container .profileSetting-body-container .profileSetting-body{
+    display: flex;
+    flex-direction: column;
+
+    width:80%;
+    padding: 50px;
+}
+.ProfileSetting-container .profileSetting-body-container .profileSetting-body{
+    display: flex;
+    flex-direction: column;
+    width:80%;
+    padding: 50px;
+}
+.ProfileSetting-container .profileSetting-body-container .profileSetting-body .profileSetting-body-menu{
+    display: flex;
+    justify-content: center;
+    width:60%;
+}
+.ProfileSetting-container .profileSetting-body-container .profileSetting-body .menu:hover{
+    cursor: pointer;
+}
+
+
+@media (max-width:1400px)
+{
+    .ProfileSetting-container .profileSetting-body-container .profileSetting-body .profileSetting-body-menu{
+        width:75%;
+    }
+}
+@media (max-width:1200px)
+{
+    .ProfileSetting-container .profileSetting-body-container .profileSetting-body .profileSetting-body-menu{
+        width:90%;
+    }
+    .ProfileSetting-container .profileSetting-body-container .profileSetting-body{
+        width:90%;
+    }
+}
+@media (max-width:1040px)
+{
+    .ProfileSetting-container .profileSetting-body-container .profileSetting-body .profileSetting-body-menu{
+        width:100%;
+    }
+}
+@media (max-width:768px)
+{
+
+    .ProfileSetting-container .profileSetting-body-container .profileSetting-body{
+        width:95%;
+    }
+}
+
+

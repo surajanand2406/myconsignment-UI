@@ -1,0 +1,24 @@
+.job-categories-container{
+    display: flex;
+    flex-direction: column;
+}
+.job-categories-container .job-categories-body-container{
+    display: flex;
+    justify-content: center;
+}
+.job-categories-container .job-categories-body-container .job-categories-body{
+    width: 80%;
+    margin-top: 50px;
+}
+.job-categories-container .job-categories-body-container .job-categories-body .job-categories-body-head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media (max-width:991px){
+    .job-categories-container .job-categories-body-container .job-categories-body .job-categories-body-head{
+        display: flex;
+        flex-direction: column;
+    }
+}

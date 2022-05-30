@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+.loginHeader {
+    max-width: 1440px;
+    width: 100%;
+    float: left;
+
+.firstUpper {
+    background: #5BB98E;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 130px;
+    .leftFirstUpper{
+        .ant-select{
+            z-index: 111111111;
+        }
+    }
+    @media(max-width:1366px) {
+    padding: 14px 7%;
+    }
+    .loginBtn {
+        margin-right: 20px;
+    }
+    .signupBtn {
+        background: #27AE60;
+        color: #ffffff;
+    }
+    .ant-select-selector {
+        background: transparent;
+        border: none;
+    }
+}
+.secondUpper {
+    background: #40926C;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 130px;
+    @media(max-width:1366px) {
+    padding: 25px 7%;
+    }
+    .left {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .logo {
+            margin-right: 25px;
+            img{
+                width: 250px;
+            }
+        }
+        .search {
+            position: absolute;
+            left: 462px;
+            .ant-input-search{
+                border-radius: 100px;
+                max-width: 500px;
+                padding: 11px 11px 11px 25px;
+            }
+            }
+        
+    }
+    svg {
+        font-size: 20px;
+        color: #ffffff;
+        cursor: pointer;
+        &:hover {
+            color: #EE4054;
+        }
+    }
+    .anticon.anticon-heart {
+        margin-right: 18px;
+        }
+}
+.anticon.anticon-search.ant-input-search-icon {
+    svg {
+        font-size: 20px;
+        color: #EE4054;
+    }
+}
+.btmHeadr {
+    background: #F2F2F2;
+    text-align: center;
+    padding: 25px 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0px !important;
+    @media(max-width:1366px) {
+        padding: 25px 7%;
+    }
+    li {
+        a {
+            margin-right: 67px;
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: #000000;
+            white-space: nowrap;
+            &:hover {
+                color: #EE4054;
+            }
+            svg {
+                font-size: 18px;
+            }
+        }
+    }
+}
+}

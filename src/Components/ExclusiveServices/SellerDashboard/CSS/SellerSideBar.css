@@ -1,0 +1,59 @@
+.Seller-sidebar-container{
+    display: flex;
+    width: 20%;
+    height: 92vh;
+    border-right: solid 2px lightgray;
+}
+.Seller-sidebar-container .Seller-sidebar-Body-container{
+    width: 100%;
+}
+.Seller-sidebar-container .Seller-sidebar-Body-container .Seller-sidebar-Body .Seller-sidebar-Body-Header{
+    display: flex;
+    align-items: center;
+    background-color: #eeeeee;
+    border-bottom: solid 1px lightgray;
+    padding:15px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.Seller-sidebar-container .Seller-sidebar-Body-container .Seller-sidebar-Body .Seller-sidebar-Body-Menues{
+    width: 100%;
+}
+.Seller-sidebar-container .Seller-sidebar-Body-container .Seller-sidebar-Body .Seller-sidebar-Body-Menues .Menu{
+    display: flex;
+    align-items: center;
+    padding:20px;
+    border-bottom: solid 1px lightgray;
+    color:black;
+}
+.Seller-sidebar-container .Seller-sidebar-Body-container .Seller-sidebar-Body .Seller-sidebar-Body-Menues .Menu:hover{
+    background-color: darkcyan;
+    color:white;
+    cursor: pointer;
+}
+.Seller-sidebar-container .Seller-sidebar-Body-container .Seller-sidebar-Body .Seller-sidebar-Body-Menues .Menu .menu-icon{
+    width:10%;
+}
+.Seller-sidebar-container .Seller-sidebar-Body-container .Seller-sidebar-Body .Seller-sidebar-Body-Menues .Menu .menu-text{
+   width:90%;
+   font-size: 17px;
+}
+
+
+@media(max-width:1200px){
+    .Seller-sidebar-container{
+        width: 25%;
+    }
+    .Seller-sidebar-container .Seller-sidebar-Body-container .Seller-sidebar-Body .Seller-sidebar-Body-Menues .Menu .menu-icon{
+        width:15%;
+    }
+    .Seller-sidebar-container .Seller-sidebar-Body-container .Seller-sidebar-Body .Seller-sidebar-Body-Menues .Menu .menu-text{
+       width:85%;
+    }
+}
+
+@media(max-width:992px){
+    .Seller-sidebar-container{
+        display: none;
+    }
+}

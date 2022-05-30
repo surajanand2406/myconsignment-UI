@@ -1,0 +1,183 @@
+/** @format */
+
+// @import "~bootstrap/dist/css/bootstrap.min.css";
+@import url("https://fonts.googleapis.com/css?family=Gelasio:400,400i,500,500i,600,600i,700,700i|IBM+Plex+Sans:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap");
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  width: 100% !important;
+  background-color: #fff !important;
+  overflow: "auto";
+}
+input,
+.ant-input-affix-wrapper {
+  border-radius: 100px !important;
+  padding: 12px 22px;
+  font-size: 13px !important;
+}
+.ant-input-affix-wrapper {
+  padding: 0 !important;
+}
+
+.ant-form-item-has-error .ant-form-item-explain,
+.ant-form-item-has-error .ant-form-item-split {
+  color: #ff4d4f;
+  font-size: 12px;
+  font-weight: 400;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+@media (max-width: 1400px) {
+  input {
+    border-radius: 100px !important;
+    padding: 8px 20px !important;
+  }
+}
+.ant-input-suffix {
+  margin-left: 4px;
+  margin-right: 12px;
+}
+input:hover,
+input:active,
+input:focus,
+.ant-input-affix-wrapper:hover,
+.ant-input-affix-wrapper:active,
+.ant-input-affix-wrapper:focus {
+  border-color: #5bb98e !important;
+  transition: all ease 0.4s;
+}
+button {
+  &:hover,
+  &:active,
+  &:focus {
+    box-shadow: none;
+    border-color: #5bb98e;
+  }
+}
+.ant-select-selection-item {
+  &:active,
+  &:hover,
+  &:focus {
+    outline: none;
+  }
+}
+.ant-select:not(.ant-select-disabled):hover .ant-select-selector {
+  border-color: #5bb98e !important;
+}
+select {
+  &:hover,
+  &:active,
+  &:focus {
+    outline: none;
+    border-color: #5bb98e;
+  }
+}
+.ant-select-focused.ant-select-single:not(.ant-select-customize-input)
+  .ant-select-selector {
+  box-shadow: none;
+}
+// left side style//
+.colorItem {
+  .ant-checkbox-checked .ant-checkbox-inner::after {
+    display: none;
+  }
+  .ant-checkbox-inner {
+    border-radius: 0;
+  }
+  .ant-checkbox {
+    padding: 2px;
+    border: solid 1px transparent;
+  }
+  .ant-checkbox-checked {
+    border-color: #c4c4c4;
+  }
+
+  .blckcheck {
+    .ant-checkbox-inner,
+    .ant-checkbox-checked .ant-checkbox-inner {
+      background-color: #000000;
+      border-color: #000000;
+    }
+  }
+
+  .orgcheck {
+    .ant-checkbox-inner,
+    .ant-checkbox-checked .ant-checkbox-inner {
+      background-color: #de720e;
+      border-color: #de720e;
+    }
+  }
+  .blueheck {
+    .ant-checkbox-inner,
+    .ant-checkbox-checked .ant-checkbox-inner {
+      background-color: #6278dd;
+      border-color: #6278dd;
+    }
+  }
+  .browncheck {
+    .ant-checkbox-inner,
+    .ant-checkbox-checked .ant-checkbox-inner {
+      background-color: #625749;
+      border-color: #625749;
+    }
+  }
+  .greencheck {
+    .ant-checkbox-inner,
+    .ant-checkbox-checked .ant-checkbox-inner {
+      background-color: #478c52;
+      border: 1px solid #478c52;
+    }
+  }
+}
+.ant-btn {
+  border-radius: 100px;
+}
+.btnTrasparent {
+  border: 1px solid #979797;
+  background: transparent;
+  color: #211f1f;
+}
+// steps style//
+.ant-steps-item-process .ant-steps-item-icon {
+  background: #595cff !important;
+  border-color: #595cff !important;
+}
+.ant-steps-item-process
+  > .ant-steps-item-container
+  > .ant-steps-item-content
+  > .ant-steps-item-title,
+.ant-steps-item-finish .ant-steps-item-icon > .ant-steps-icon {
+  color: #595cff !important;
+}
+
+.ant-steps-item-finish
+  > .ant-steps-item-container
+  > .ant-steps-item-content
+  > .ant-steps-item-title {
+  color: #000000;
+}
+.ant-steps-item-finish .ant-steps-item-icon {
+  border-color: #595cff;
+}
+.ant-steps-item-finish
+  > .ant-steps-item-container
+  > .ant-steps-item-content
+  > .ant-steps-item-title::after {
+  background-color: #595cff !important;
+}
+// steps end//
+// radio start //
+.ant-radio-inner::after {
+  background-color: #595cff !important;
+}
+.ant-radio-checked::after,
+.ant-radio-checked .ant-radio-inner {
+  border-color: #595cff !important;
+}

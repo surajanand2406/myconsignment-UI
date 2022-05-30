@@ -1,0 +1,24 @@
+.add-category-container{
+    display: flex;
+    flex-direction: column;
+}
+.add-category-container .add-category-body-container{
+    display: flex;
+    justify-content: center;
+}
+.add-category-container .add-category-body-container .add-category-body{
+    width: 70%;
+    margin-top: 50px;
+}
+.add-category-container .add-category-body-container .add-category-body .add-category-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.add-category-container .add-category-body-container .add-category-body .add-category{
+
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #eeeeee;
+}

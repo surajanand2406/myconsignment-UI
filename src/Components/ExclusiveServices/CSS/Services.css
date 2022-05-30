@@ -1,0 +1,59 @@
+.Services-Container{
+    display: flex;
+    flex-direction: column;
+}
+.Services-Container .Services-Body-Container{
+    display: flex;
+    justify-content:center;
+    width:100%;
+}
+.Services-Container .Services-Body-Container .Services-Body{
+    width:90%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.Services-Container .Services-Body-Container .Services-Body .Services-Header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Services-Container .Services-Body-Container .Services-Body .filter{
+    background-color: #eeeeee;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+.Services-Container .Services-Body-Container .Services-Body .filter .filter-columns{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Services-Container .Services-Body-Container .Services-Body .filter .filter-buttons{
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@media(max-width:992px){
+    .Services-Container .Services-Body-Container .Services-Body .filter{
+        display: flex;
+        flex-direction: column;
+    }
+    .Services-Container .Services-Body-Container .Services-Body .filter .filter-columns{
+        width: 100%;
+    }
+    .Services-Container .Services-Body-Container .Services-Body .filter .filter-buttons{
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+@media(max-width:576px){
+    .Services-Container .Services-Body-Container .Services-Body .Services-Header{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

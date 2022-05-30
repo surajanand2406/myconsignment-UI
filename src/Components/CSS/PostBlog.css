@@ -1,0 +1,16 @@
+.post-blog-container{
+    display: flex;
+    flex-direction: column;
+}
+.post-blog-container .post-blog-body-container{
+    display:flex;
+    justify-content: center;
+    width:100%;
+}
+.post-blog-container .post-blog-body-container .post-blog-body{
+    display: flex;
+    flex-direction: column;
+
+    width:80%;
+    padding: 100px;
+}

@@ -1,0 +1,45 @@
+.sellerJob-Description-Container{
+    display: flex;
+    flex-direction: column;
+}
+.sellerJob-Description-Container .sellerJob-Description-Body-Container{
+    display: flex;
+    width:100%;
+}
+.sellerJob-Description-Container .sellerJob-Description-Body-Container .sellerJob-Description-Body{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    padding:30px;
+    height: 92vh;
+    overflow-y: auto;
+}
+.sellerJob-Description-Container .sellerJob-Description-Body-Container .sellerJob-Description-Body .sellerJob-Detail{
+    display: flex;
+    justify-content: center;
+}
+.sellerJob-Description-Container .sellerJob-Description-Body-Container .sellerJob-Description-Body .sellerJob-Detail .sellerJob-Detail-box{
+    width:50%;
+    border: solid 1px lightgray;
+}
+
+@media(max-width:1200px){
+    .sellerJob-Description-Container .sellerJob-Description-Body-Container .sellerJob-Description-Body{
+        width: 75%;
+    }
+}
+@media(max-width:1024px){
+    .sellerJob-Description-Container .sellerJob-Description-Body-Container .sellerJob-Description-Body .sellerJob-Detail .sellerJob-Detail-box{
+        width:80%;
+    }
+}
+@media(max-width:992px){
+    .sellerJob-Description-Container .sellerJob-Description-Body-Container .sellerJob-Description-Body{
+        width: 100%;
+    }
+}
+@media(max-width:576px){
+    .sellerJob-Description-Container .sellerJob-Description-Body-Container .sellerJob-Description-Body .sellerJob-Detail .sellerJob-Detail-box{
+        width:100%;
+    }
+}

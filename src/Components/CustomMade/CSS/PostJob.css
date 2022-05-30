@@ -1,0 +1,44 @@
+.post-a-job-container{
+    display: flex;
+    flex-direction: column;
+}
+.post-a-job-container .post-a-job-body-container{
+    display: flex;
+    padding: 50px;
+}
+.post-a-job-container .post-a-job-body-container .post-a-job-form{
+    display: flex;
+    width:50%;
+    margin-top: 20px;
+}
+.post-a-job-container .post-a-job-body-container .post-a-job-form input[type="file"]{
+    display: none;
+}
+.post-a-job-container .post-a-job-body-container .post-a-job-form label{
+
+    padding: 10px;
+    color: white;
+    background-color: darkcyan;
+    margin-top: 0px;
+    border-radius: 5px;
+}
+.post-a-job-container .post-a-job-body-container .post-a-job-form label:hover{
+   cursor: pointer;
+}
+
+.post-a-job-container .post-a-job-body-container .form-description{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+}
+
+@media (max-width:768px)
+{
+    .post-a-job-container .post-a-job-body-container .form-description{
+       display: none;
+    }
+    .post-a-job-container .post-a-job-body-container .post-a-job-form{
+        width:100%;
+    }
+}

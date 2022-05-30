@@ -1,0 +1,128 @@
+.mp_0 {
+  margin: 0;
+  padding: 0
+}
+
+.myChat {
+  background-color: aquamarine;
+  color: white;
+  font-weight: 500;
+}
+
+/* html * {outline: 1px solid red} */
+
+.we_500 {
+  font-weight: 500
+}
+
+.m_3{
+    margin: 3px!important
+}
+
+.m_1{
+  margin: 1px!important
+}
+
+
+.itemImage {
+  border-radius: 10px
+}
+
+.text_center {
+  text-align: center;
+}
+
+.f_17 {
+  font-size: 17px;
+}
+
+.width_100 {
+  width: 100%;
+}
+
+.bg_test {
+  background-color: aqua;
+}
+
+
+
+/* animtaion */
+
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.fadeOut {
+  /* animation-name: fadeOut;
+  animation-duration: 2s */
+}
+
+
+
+
+
+/* colors */
+
+
+.bg_brown {
+  background-color: #B17E4E!important;
+  border-color: #B17E4E!important ;
+}
+
+
+.display_none {
+  display: none!important
+}
+
+.display_block {
+  display: block!important;
+}
+
+/* fab */
+
+
+.fab {
+   padding: 10px 16px;
+   background-color: rgb(116, 105, 105);
+   border-radius: 50%;
+   box-shadow: 0 6px 10px 0 #666;
+   transition: all 0.1s ease-in-out;
+ 
+   font-size: 24px;
+   color: white;
+   text-align: center;
+   /* line-height: 70px; */
+ 
+   position: fixed;
+   right: 20px;
+   bottom: 20px;
+}
+ 
+.fab:hover {
+   box-shadow: 0 6px 14px 0 #666;
+   transform: scale(1.05);
+}
+
+
+
+.chat_absolute {
+  position: absolute!important;
+  /* display: block!important; */
+  /* top: 0!important; */
+  bottom: 100!important;
+
+}
+
+
+.absolute_video {
+  position: fixed!important;
+  left: -10!important;
+  top: 50% 
+}
