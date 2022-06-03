@@ -27,6 +27,35 @@ function getBase64(file) {
     });
 }
 
+//My Code
+const myCurr = [{
+    label: 'USD',
+    value: 'usd'
+}, {
+    label: 'INR',
+    value: 'inr'
+}, {
+    label: 'TAKA',
+    value: 'taka'
+}, {
+    label: 'PESO',
+    value: 'peso'
+}];
+
+const myLang = [{
+    label: 'ENG',
+    value: 'usd'
+}, {
+    label: 'Spanish',
+    value: 'inr'
+}, {
+    label: 'French',
+    value: 'taka'
+}, {
+    label: 'Germany',
+    value: 'peso'
+}];
+
 var width = window.screen.width;
 class Navbar extends Component {
     constructor(props) {
@@ -575,9 +604,11 @@ class Navbar extends Component {
 
         return (
             <div className="navbar-container">
-                <Link to="/" className="logo">
+                <Select defaultValue={'ENG'} options={myLang} style={{ width: this.state.windowWidth <= 576 ? '100px' : '70px', height: '30px' }}/>
+                <Select defaultValue={'USD'} options={myCurr} style={{ width: this.state.windowWidth <= 576 ? '10px' : '70px', height: '30px' }}/>
+                {/* <Link to="/" className="logo">
                     <img src={Logo} alt='logo not found' style={{ width: this.state.windowWidth <= 576 ? '100%' : '80%', height: '100%' }} />
-                </Link>
+                </Link> */}
                 {/* <div className="search-box" style={{...searchStyle,opacity:this.state.searchBarOpacity}}>
                     <FontAwesomeIcon icon={faSearch} color="gray" size="lg" style={{ marginLeft: '20px' }} />
                     <Input className="Input" size="large" onChange={e=>{
@@ -592,14 +623,14 @@ class Navbar extends Component {
                 </div> */}
 
                 <ul className="nav">
-                    <Link to='/auction'><li className="l1 l2">Live Auctions</li></Link>
+                    {/* <Link to='/auction'><li className="l1 l2">Live Auctions</li></Link>
                     <Link to="/custom-made"><li className="l1 l2">Custom Made</li></Link>
                     <Link to='/exclusive-services'><li className="l1 l2">Exclusive Services</li></Link>
-                    <Link to='/sponsor'><li className="l1 l2">Sponsorship</li></Link>
-                    {this.props.UID !== '' && <li ><Button className="AddListingsFloatButton" size={this.state.windowWidth <= 576 ? 'small' : 'large'} icon="plus" shape="square" onClick={this.handleAddListing}></Button></li>}
-                    {this.props.UID !== '' && <li ><Button className="AddListings" shape="round" size="large" onClick={this.handleAddListing}>Add Listing</Button></li>}
-                    {this.props.UID === '' && <li><Button shape="round" icon="login" size={this.state.windowWidth <= 576 ? 'small' : 'large'} onClick={this.handleLogIn}>Login</Button></li>}
-                    {this.props.UID === '' && <li className="l1"><Button shape="round" icon="signup" size="large" onClick={this.handleSignUpModal}>Signup</Button></li>}
+                    <Link to='/sponsor'><li className="l1 l2">Sponsorship</li></Link> */}
+                    {/* {this.props.UID !== '' && <li ><Button className="AddListingsFloatButton" size={this.state.windowWidth <= 576 ? 'small' : 'large'} icon="plus" shape="square" onClick={this.handleAddListing}></Button></li>}
+                    {this.props.UID !== '' && <li ><Button className="AddListings" shape="round" size="large" onClick={this.handleAddListing}>Add Listing</Button></li>} */}
+                    {this.props.UID === '' && <li><Button shape="round" className='button1' size={this.state.windowWidth <= 576 ? 'small' : '20px'} onClick={this.handleLogIn}>Login</Button></li>}
+                    {this.props.UID === '' && <li className="l1 button2"><Button shape="round" size="20px" onClick={this.handleSignUpModal}>Signup</Button></li>}
 
                     <li className="side-menu"><Icon type="menu" style={{ fontSize: this.state.windowWidth <= 576 ? '20px' : '25px' }} onClick={this.handleSidebar} /></li>
                 </ul>
