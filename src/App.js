@@ -71,7 +71,7 @@ import Catalogue from "./Components/View/product/catalogue/Catalogue";
 import Footer from "./Components/View/Footer/Footer";
 import ProductDetail from "./Components/View/product/productDetail/ProductDetail";
 import CheckoutPage from "./Components/View/product/checkout/Checkout";
-
+import LoginSignup from "./Components/LoginSignup"
 import ReactWOW from "react-wow";
 
 import firebase from "firebase";
@@ -214,6 +214,7 @@ class App extends React.Component {
               component={SellerMesseges}
             />
             <Route path="/login" component={Login} />
+            <Route path="/loginSignup" component={LoginSignup} />
             <Route path="/store" component={ProductStore} />
             <Route path="/catalogue" component={Catalogue} />
             <Route path="/productDetail" component={ProductDetail} />

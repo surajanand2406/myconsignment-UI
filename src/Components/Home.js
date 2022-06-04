@@ -9,7 +9,6 @@ import Navbar from './Navbar'
 import SubNavbar from './SubNavbar'
 import Footer from './Footer'
 import { Icon as Iconn } from '@ant-design/compatible';
-import {Slider as Slikslider} from "react-slick";
 import { Button, Menu, Dropdown, Divider, Card, List, Modal, Skeleton, Avatar, Input, Tooltip, Slider, Rate, message, Carousel } from 'antd'
 import './CSS/Home.css'
 import image1 from './images/mobile1.jpg'
@@ -86,6 +85,7 @@ const contentStyle = {
   lineHeight: '160px',
   textAlign: 'center',
   padding: '50px'
+  
 };
 
 const contentStyle2 = {
@@ -940,61 +940,9 @@ class Home extends Component {
             </a>}
           </div>
         </div> */}
-
-        <Divider style={{ marginTop: 20 }}><h1>Featured Listings</h1></Divider>
-        <div>
-        <h2>Multiple Rows</h2>
-        <Slikslider {...settings}>
-          <div>
-            <h3>1</h3>
-          </div>
-          <div>
-            <h3>2</h3>
-          </div>
-          <div>
-            <h3>3</h3>
-          </div>
-          <div>
-            <h3>4</h3>
-          </div>
-          <div>
-            <h3>5</h3>
-          </div>
-          <div>
-            <h3>6</h3>
-          </div>
-          <div>
-            <h3>7</h3>
-          </div>
-          <div>
-            <h3>8</h3>
-          </div>
-          <div>
-            <h3>9</h3>
-          </div>
-          <div>
-            <h3>10</h3>
-          </div>
-          <div>
-            <h3>11</h3>
-          </div>
-          <div>
-            <h3>12</h3>
-          </div>
-          <div>
-            <h3>13</h3>
-          </div>
-          <div>
-            <h3>14</h3>
-          </div>
-          <div>
-            <h3>15</h3>
-          </div>
-          <div>
-            <h3>16</h3>
-          </div>
-        </Slikslider>
-      </div>
+        <Slide bottom>
+        <h1 style={{textAlign:'left', paddingLeft:'50px'}}>Featured Listings</h1>
+        </Slide>
         
         <div className="products-container">
           <div className="products">
