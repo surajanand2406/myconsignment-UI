@@ -55,18 +55,18 @@ import "./styles.css";
 const carouselSetting = {
   autoplay: true,
   arrows: true,
-  infinite:true,
+  infinite: true,
   slidesToShow: 1,
-  rtl:true
-  
+  rtl: true
+
 };
 
 const carouselSettings = {
   arrows: true,
-  infinite:true,
+  infinite: true,
   slidesToShow: 3,
   autoplay: true,
-  
+
 };
 const settings = {
   className: "center",
@@ -85,7 +85,7 @@ const contentStyle = {
   lineHeight: '160px',
   textAlign: 'center',
   padding: '50px'
-  
+
 };
 
 const contentStyle2 = {
@@ -103,7 +103,7 @@ const imageStyle = {
 
 const imageStyle2 = {
   height: '200px',
-  paddingLeft:'20px'
+  paddingLeft: '20px'
 
 }
 const googleMapsApiKey = "AIzaSyBl2oJaWVIAGrzYmMPeHSm0IQnwVm0WXMU";
@@ -196,7 +196,101 @@ class Home extends Component {
         { Title: 'abc', Description: 'sdsdasdfsdfsdfsda', image: image1, price: "120" },
         { Title: 'abc', Description: 'sdsdasdfsdfsdfsda', image: image1, price: "120" },
         { Title: 'abc', Description: 'sdsdasdfsdfsdfsda', image: image1, price: "120" }],
+
+      customeMadeData: [
+        {
+            "currency": "USD",
+            "trade": false,
+            "shippingNational": true,
+            "shippingInternational": true,
+            "imageLinks": [
+                "https://placehold.co/500x400/ff0000/FFFFFF.webp"
+            ],
+            "createdDate": "2021-08-30T10:04:31.955Z",
+            "listingID": "listing7077103",
+            "isPRO": true,
+            "_id": "612cad60a7534213e25e5aab",
+            "title": "ultrices phasellus id sapien in",
+            "description": "Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui. Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc.",
+            "price": 7463,
+            "Category": "Art",
+            "subCategory": "Sculpture",
+            "geometry": {
+                "type": "Point",
+                "_id": "612cad60a7534213e25e5aac",
+                "coordinates": [
+                    67.52387879092444,
+                    24.995434941366632
+                ]
+            },
+            "firebaseUID": "UaWAulsqdVPbWcFTfka9dZU5Shw1",
+            "shippingID": "61263e89b7cfb6391d6e0e97",
+            "__v": 0
+        },
+        {
+            "currency": "USD",
+            "trade": false,
+            "shippingNational": false,
+            "shippingInternational": true,
+            "imageLinks": [
+                "https://placehold.co/800x600/1100ff/FFFFFF.webp",
+                "https://placehold.co/600x400/000000/FFFFFF.webp",
+                "https://placehold.co/800x400/00ff00/FFFFFF.webp"
+            ],
+            "createdDate": "2021-08-30T10:04:31.955Z",
+            "listingID": "listing5300799",
+            "isPRO": true,
+            "_id": "612cad60a7534213e25e5aad",
+            "title": "ipsum primis in",
+            "description": "Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.",
+            "price": 546,
+            "Category": "Art",
+            "subCategory": "Reproduction",
+            "geometry": {
+                "type": "Point",
+                "_id": "612cad60a7534213e25e5aae",
+                "coordinates": [
+                    67.8438659418378,
+                    25.801578261819138
+                ]
+            },
+            "firebaseUID": "UaWAulsqdVPbWcFTfka9dZU5Shw1",
+            "shippingID": "612349b5600f6c6800fcde03",
+            "__v": 0
+        },
+        {
+            "currency": "USD",
+            "trade": false,
+            "shippingNational": false,
+            "shippingInternational": true,
+            "imageLinks": [
+                "https://placehold.co/500x400/ff0000/FFFFFF.webp",
+                "https://placehold.co/600x600/0011ff/FFFFFF.webp"
+            ],
+            "createdDate": "2021-08-30T10:04:31.955Z",
+            "listingID": "listing8191773",
+            "isPRO": true,
+            "_id": "612cad60a7534213e25e5aaf",
+            "title": "dis parturient montes nascetur ridiculus",
+            "description": "Suspendisse potenti. Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris. Morbi non lectus.",
+            "price": 3836,
+            "Category": "Art",
+            "subCategory": "Mixed Media",
+            "geometry": {
+                "type": "Point",
+                "_id": "612cad60a7534213e25e5ab0",
+                "coordinates": [
+                    67.9716975584846,
+                    25.502621822612547
+                ]
+            },
+            "firebaseUID": "UaWAulsqdVPbWcFTfka9dZU5Shw1",
+            "shippingID": "61267e0bc647a54f7bdf7761",
+            "__v": 0
+        }],
+
       loadingListings: true,
+      loadingCustomeMade:true,
       data: [],
       page: 1,
       totalPages: 1,
@@ -766,7 +860,7 @@ class Home extends Component {
               </ul>
             </div>
             <div className='col-8'>
-              <Carousel {...carouselSetting}  style={contentStyle}>
+              <Carousel {...carouselSetting} style={contentStyle}>
                 <div>
                   <img style={imageStyle} src={image2} alt='' />
                 </div>
@@ -799,7 +893,7 @@ class Home extends Component {
             </div>
           </Carousel>
         </div>
-       
+
         {/* <div className="search-box" style={{...searchStyle}}>
                     <Input onKeyDown={e=> {
                       if(e.which===13 || e.keyCode===13){
@@ -941,9 +1035,9 @@ class Home extends Component {
           </div>
         </div> */}
         <Slide bottom>
-        <h1 style={{textAlign:'left', paddingLeft:'50px'}}>Featured Listings</h1>
+          <h1 style={{ textAlign: 'left', paddingLeft: '50px' }}>Featured Listings</h1>
         </Slide>
-        
+
         <div className="products-container">
           <div className="products">
             {this.state.loadingListings === false && this.props.data.length > 0 &&
@@ -1065,23 +1159,24 @@ class Home extends Component {
                 </List.Item>
               )}
             />}
-            <div style={{ display: 'flex', justifyContent: 'center' }}>
+            <div>
               {this.props.data.length > 0 && this.state.loadingListings === false && <Fade bottom>
-                <Button onClick={this._handleLoadMore} style={{ backgroundColor: 'darkgreen', width: '200px', color: 'white', marginBottom: '30px', marginTop: '30px', height: '50px', fontSize: '20px' }} shape="round">Load More</Button>
+                <Button onClick={this._handleLoadMore} style={{ border: 'none', float: 'left' }}>See More</Button>
               </Fade>}
             </div>
           </div>
         </div>
 
-        <Divider><h1>....</h1></Divider>
-
-        <div style={{ width: '100%', display: 'flex', justifyContent: 'center' }}>
-          <div style={{ width: '80%', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+        <div style={{ width: '100%', background: '#75a76d' }}>
+          <div className='container'>
             <Fade top cascade>
-              <h1 style={{ fontWeight: 'bold', fontSize: this.state.windowWidth <= 375 ? 22 : 30 }}>Our Exclusive Services</h1>
+              <h1 style={{ fontWeight: 'bold', textAlign: 'left', fontSize: this.state.windowWidth <= 375 ? 22 : 30 }}>Exclusive Services</h1>
             </Fade>
+          </div>
+          <div style={{ width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'space-between' }}>
+
             <List
-              grid={{ gutter: 26, xl: 5, xs: 1, sm: 3, md: 3, lg: 4, xxl: 6 }}
+              grid={{ gutter: 26, xl: 4, xs: 1, sm: 3, md: 3, lg: 4, xxl: 6 }}
               dataSource={this.props.serviceData.length > 5 ? this.props.serviceData.slice(Math.max(this.props.serviceData.length - 6, 0)) : this.props.serviceData}
               renderItem={(item, index) => (
                 <List.Item>
@@ -1094,7 +1189,7 @@ class Home extends Component {
                     >
                       <div >
                         <div style={{ padding: 10 }}>
-                          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+                          <div style={{ display: 'flex', alignItems: 'center' }}>
                             <div style={{ display: 'flex', alignItems: 'center' }}>
                               <Avatar size="default" src={item.userImage} />
                               <h4 style={{ margin: 0, fontWeight: 'bold', marginLeft: 10 }}>{item.userName}</h4>
@@ -1121,24 +1216,150 @@ class Home extends Component {
               )}
 
             />
-            {this.props.serviceData.length >= 0 &&
-              <Link to={`/exclusive-services`}>
-                <Button size="large" style={{ backgroundColor: 'darkgreen', color: 'white' }} >
-                  <FontAwesomeIcon icon={faEye} style={{ marginRight: 5 }} /> View More
-                </Button>
-              </Link>
-            }
+            <div style={{ float: 'right' }}>
+              {this.props.serviceData.length >= 0 &&
+                <Link to={`/exclusive-services`}>
+                  See More
+                </Link>
+              }
+            </div>
           </div>
+
+
         </div>
 
-        <Divider style={{ margin: 0 }}><h1>...</h1></Divider>
+        {/* <Divider style={{ margin: 0 }}><h1>...</h1></Divider> */}
 
         <div className="What-You-Get-Section">
           <div className="What-You-Get-Inner-Container">
             <Zoom duration={500}>
-              <h1 style={{ fontSize: 38, marginBottom: 50, fontWeight: 'bold', textAlign: 'center' }}>Here's What to expect from us</h1>
+              <h1 style={{ fontSize: 28, marginBottom: 50, fontWeight: 'bold' }}>Recent Custom Made Jobs</h1>
             </Zoom>
-            <div className="main-box">
+            {this.state.loadingListings === false && this.props.data.length > 0 &&
+
+              <List
+                grid={{ gutter: 26, xxl: 3, xl: 3, lg: 3, md: 2, sm: 2 }}
+                dataSource={this.state.customeMadeData}
+                renderItem={(item, index) => (
+                  <List.Item>
+                    <Slide bottom>
+                      <Card
+                        hoverable={true}
+                        className="Cards"
+                        bodyStyle={{ padding: 20 }}
+                        style={{ width: (this.state.windowWidth <= 360) ? 200 : (this.state.windowWidth <= 576) ? 300 : 260, borderTopLeftRadius: '10px', borderTopRightRadius: '10px'}}
+                        cover={<Link to={`/itemdescription/${item.listingID}`}>
+                          <img onClick={() => {
+                            if (item.isFavorited === true) {
+                              this.props.setFavorite(true)
+                            }
+                            else {
+                              this.props.setFavorite(false)
+
+                            }
+                          }} alt='icon error' src={item.imageLinks[0]} style={{ height: 250, width: (this.state.windowWidth <= 360) ? 200 : (this.state.windowWidth <= 576) ? 300 : 260, borderTopLeftRadius: '10px', borderTopRightRadius: '10px' }} />
+                        </Link>}
+                        actions={[
+                          <Iconn onClick={() => {
+
+                            this.setState({
+                              selectedItem: item,
+                              showShareModal: true
+                            })
+                          }} type="share-alt" key="share-alt" />,
+                          <div onClick={() => {
+                            this.setState({
+                              showBuyModal: true,
+                              selectedListing: item
+                            })
+                          }}>
+                            {/* <Link><FontAwesomeIcon icon={faEye} /></Link> */}
+                            <img src={Buy} alt='Buy now' />
+                          </div>,
+                          <Iconn onClick={() => {
+                            if (this.props.UID !== '') {
+                              let data = {
+                                id: item._id,
+                                firebaseUID: this.props.UID
+                              }
+                              fetch(url + '/api/addFavorite', { method: 'PUT', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(data) })
+                                .then(res => res.json())
+                                .then(response => {
+                                  if (response.message !== 'Success') {
+                                    message.error('Failed to Favorite Item')
+                                  }
+                                })
+                            }
+                            this.props.favoriteItem(item._id)
+                          }} type="heart" theme={item.isFavorited === true ? "filled" : "outlined"} key="heart" />,
+                        ]}
+                      >
+                        <Card.Meta
+                          title={
+                            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start' }}>
+                              <Truncate style={{ margin: 0, fontWeight: 'bold', fontSize: 18 }}>
+                                <h3>{item.title}</h3>
+                              </Truncate>
+                              {
+                                item.isPRO === true ?
+                                  <p style={{ padding: 2, backgroundColor: '#8b0000', color: 'white', fontSize: 14, marginBottom: 0 }}>PRO</p>
+                                  :
+                                  <p style={{ padding: 13, marginBottom: 0 }}></p>
+                              }
+                            </div>
+                          }
+                          description={<div style={{ flex: 1, flexDirection: "row" }}>
+                            <Truncate lines="3" style={{ margin: 0 }}>{item.description}</Truncate>
+                            <h3 style={{ margin: 0, flexBasis: "30%" }}>${item.price}</h3>
+                          </div>
+
+                          }
+                        />
+                      </Card>
+                    </Slide>
+                  </List.Item>
+                )}
+              />
+            }
+            {this.state.loadingListings === false && this.props.data.length === 0 && <div>
+              <h2 style={{ fontWeight: 'bold', textAlign: 'center' }}>No Listings Published</h2>
+              <Fade bottom>
+                <Button style={{ backgroundColor: 'darkgreen', width: '200px', color: 'white', marginBottom: '30px', marginTop: '30px', height: '50px', fontSize: '20px' }} shape="round">Add first listing</Button>
+              </Fade>
+            </div>}
+            {this.state.loadingListings && <List
+              grid={{ gutter: 35, xxl: 4, xl: 4, lg: 3, md: 2, sm: 2 }}
+              dataSource={this.state.fakeData}
+              renderItem={(item, index) => (
+                <List.Item>
+                  <Card
+                    style={{ width: (this.state.windowWidth <= 498) ? 180 : (this.state.windowWidth <= 598) ? 200 : 220, borderTopLeftRadius: '10px', borderTopRightRadius: '10px' }}
+
+                    actions={[
+                      <Icon type="setting" key="setting" />,
+                      <Icon type="edit" key="edit" />,
+                      <Icon type="ellipsis" key="ellipsis" />,
+                    ]}
+                  >
+                    <Skeleton loading={this.state.loadingListings} avatar active>
+                      <Card.Meta
+                        avatar={
+                          <Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" />
+                        }
+                        title="Card title"
+                        description="This is the description"
+                      />
+                    </Skeleton>
+                  </Card>
+                </List.Item>
+              )}
+            />}
+            <div>
+              {this.props.data.length > 0 && this.state.loadingListings === false && <Fade bottom>
+                <Button onClick={this._handleLoadMore} style={{ border: 'none', float: 'left' }}>See More</Button>
+              </Fade>}
+            </div>
+            {/* <div className="main-box">
               <div className="box-1">
                 <Flip left>
                   <img onClick={() => {
@@ -1188,8 +1409,141 @@ class Home extends Component {
                   </p>
                 </Zoom>
               </div>
-            </div>
+            </div> */}
 
+          </div>
+        </div>
+
+        <Slide bottom>
+          <h1 style={{ textAlign: 'left', paddingLeft: '50px' }}>Live & Upcoming Auctions</h1>
+        </Slide>
+
+        <div className="products-container">
+          <div className="products">
+            {this.state.loadingListings === false && this.props.data.length > 0 &&
+
+              <List
+                grid={{ gutter: 20, xxl: 4, xl: 4, lg: 3, md: 2, sm: 2 }}
+                dataSource={this.props.data}
+                renderItem={(item, index) => (
+                  <List.Item>
+                    <Slide bottom>
+                      <Card
+                        hoverable={true}
+                        className="Cards"
+                        bodyStyle={{ padding: 5 }}
+                        style={{ width: (this.state.windowWidth <= 360) ? 200 : (this.state.windowWidth <= 576) ? 300 : 260, borderTopLeftRadius: '10px', borderTopRightRadius: '10px' }}
+                        cover={<Link to={`/itemdescription/${item.listingID}`}>
+                          <img onClick={() => {
+                            if (item.isFavorited === true) {
+                              this.props.setFavorite(true)
+                            }
+                            else {
+                              this.props.setFavorite(false)
+
+                            }
+                          }} alt='icon error' src={item.imageLinks[0]} style={{ height: 250, width: (this.state.windowWidth <= 360) ? 200 : (this.state.windowWidth <= 576) ? 300 : 260, borderTopLeftRadius: '10px', borderTopRightRadius: '10px' }} />
+                        </Link>}
+                        actions={[
+                          <Iconn onClick={() => {
+
+                            this.setState({
+                              selectedItem: item,
+                              showShareModal: true
+                            })
+                          }} type="share-alt" key="share-alt" />,
+                          <div onClick={() => {
+                            this.setState({
+                              showBuyModal: true,
+                              selectedListing: item
+                            })
+                          }}>
+                            {/* <Link><FontAwesomeIcon icon={faEye} /></Link> */}
+                            <img src={Buy} alt='Buy now' />
+                          </div>,
+                          <Iconn onClick={() => {
+                            if (this.props.UID !== '') {
+                              let data = {
+                                id: item._id,
+                                firebaseUID: this.props.UID
+                              }
+                              fetch(url + '/api/addFavorite', { method: 'PUT', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(data) })
+                                .then(res => res.json())
+                                .then(response => {
+                                  if (response.message !== 'Success') {
+                                    message.error('Failed to Favorite Item')
+                                  }
+                                })
+                            }
+                            this.props.favoriteItem(item._id)
+                          }} type="heart" theme={item.isFavorited === true ? "filled" : "outlined"} key="heart" />,
+                        ]}
+                      >
+                        <Card.Meta
+                          title={
+                            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start' }}>
+                              <Truncate style={{ margin: 0, fontWeight: 'bold', fontSize: 18 }}>
+                                <h3>{item.title}</h3>
+                              </Truncate>
+                              {
+                                item.isPRO === true ?
+                                  <p style={{ padding: 2, backgroundColor: '#8b0000', color: 'white', fontSize: 14, marginBottom: 0 }}>PRO</p>
+                                  :
+                                  <p style={{ padding: 13, marginBottom: 0 }}></p>
+                              }
+                            </div>
+                          }
+                          description={<div style={{ flex: 1, flexDirection: "row" }}>
+                            <Truncate lines="3" style={{ margin: 0 }}>{item.description}</Truncate>
+                            <h3 style={{ margin: 0, flexBasis: "30%" }}>${item.price}</h3>
+                          </div>
+
+                          }
+                        />
+                      </Card>
+                    </Slide>
+                  </List.Item>
+                )}
+              />
+            }
+            {this.state.loadingListings === false && this.props.data.length === 0 && <div>
+              <h2 style={{ fontWeight: 'bold', textAlign: 'center' }}>No Listings Published</h2>
+              <Fade bottom>
+                <Button style={{ backgroundColor: 'darkgreen', width: '200px', color: 'white', marginBottom: '30px', marginTop: '30px', height: '50px', fontSize: '20px' }} shape="round">Add first listing</Button>
+              </Fade>
+            </div>}
+            {this.state.loadingListings && <List
+              grid={{ gutter: 35, xxl: 4, xl: 4, lg: 3, md: 2, sm: 2 }}
+              dataSource={this.state.fakeData}
+              renderItem={(item, index) => (
+                <List.Item>
+                  <Card
+                    style={{ width: (this.state.windowWidth <= 498) ? 180 : (this.state.windowWidth <= 598) ? 200 : 220, borderTopLeftRadius: '10px', borderTopRightRadius: '10px' }}
+
+                    actions={[
+                      <Icon type="setting" key="setting" />,
+                      <Icon type="edit" key="edit" />,
+                      <Icon type="ellipsis" key="ellipsis" />,
+                    ]}
+                  >
+                    <Skeleton loading={this.state.loadingListings} avatar active>
+                      <Card.Meta
+                        avatar={
+                          <Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" />
+                        }
+                        title="Card title"
+                        description="This is the description"
+                      />
+                    </Skeleton>
+                  </Card>
+                </List.Item>
+              )}
+            />}
+            <div>
+              {this.props.data.length > 0 && this.state.loadingListings === false && <Fade bottom>
+                <Button onClick={this._handleLoadMore} style={{ border: 'none', float: 'left' }}>See More</Button>
+              </Fade>}
+            </div>
           </div>
         </div>
 
