@@ -288,7 +288,191 @@ class Home extends Component {
             "shippingID": "61267e0bc647a54f7bdf7761",
             "__v": 0
         }],
-
+      upComingAuction: [
+        {
+          "currency": "USD",
+          "trade": false,
+          "shippingNational": true,
+          "shippingInternational": true,
+          "imageLinks": [
+              "https://placehold.co/500x400/ff0000/FFFFFF.webp"
+          ],
+          "createdDate": "2021-08-30T10:04:31.955Z",
+          "listingID": "listing7077103",
+          "isPRO": true,
+          "_id": "612cad60a7534213e25e5aab",
+          "title": "ultrices phasellus id sapien in",
+          "description": "Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui. Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc.",
+          "price": 7463,
+          "Category": "Art",
+          "subCategory": "Sculpture",
+          "geometry": {
+              "type": "Point",
+              "_id": "612cad60a7534213e25e5aac",
+              "coordinates": [
+                  67.52387879092444,
+                  24.995434941366632
+              ]
+          },
+          "firebaseUID": "UaWAulsqdVPbWcFTfka9dZU5Shw1",
+          "shippingID": "61263e89b7cfb6391d6e0e97",
+          "__v": 0
+      },
+      {
+          "currency": "USD",
+          "trade": false,
+          "shippingNational": false,
+          "shippingInternational": true,
+          "imageLinks": [
+              "https://placehold.co/800x600/1100ff/FFFFFF.webp",
+              "https://placehold.co/600x400/000000/FFFFFF.webp",
+              "https://placehold.co/800x400/00ff00/FFFFFF.webp"
+          ],
+          "createdDate": "2021-08-30T10:04:31.955Z",
+          "listingID": "listing5300799",
+          "isPRO": true,
+          "_id": "612cad60a7534213e25e5aad",
+          "title": "ipsum primis in",
+          "description": "Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.",
+          "price": 546,
+          "Category": "Art",
+          "subCategory": "Reproduction",
+          "geometry": {
+              "type": "Point",
+              "_id": "612cad60a7534213e25e5aae",
+              "coordinates": [
+                  67.8438659418378,
+                  25.801578261819138
+              ]
+          },
+          "firebaseUID": "UaWAulsqdVPbWcFTfka9dZU5Shw1",
+          "shippingID": "612349b5600f6c6800fcde03",
+          "__v": 0
+      },
+      {
+          "currency": "USD",
+          "trade": false,
+          "shippingNational": false,
+          "shippingInternational": true,
+          "imageLinks": [
+              "https://placehold.co/500x400/ff0000/FFFFFF.webp",
+              "https://placehold.co/600x600/0011ff/FFFFFF.webp"
+          ],
+          "createdDate": "2021-08-30T10:04:31.955Z",
+          "listingID": "listing8191773",
+          "isPRO": true,
+          "_id": "612cad60a7534213e25e5aaf",
+          "title": "dis parturient montes nascetur ridiculus",
+          "description": "Suspendisse potenti. Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris. Morbi non lectus.",
+          "price": 3836,
+          "Category": "Art",
+          "subCategory": "Mixed Media",
+          "geometry": {
+              "type": "Point",
+              "_id": "612cad60a7534213e25e5ab0",
+              "coordinates": [
+                  67.9716975584846,
+                  25.502621822612547
+              ]
+          },
+          "firebaseUID": "UaWAulsqdVPbWcFTfka9dZU5Shw1",
+          "shippingID": "61267e0bc647a54f7bdf7761",
+          "__v": 0
+      },
+      {
+          "currency": "USD",
+          "trade": false,
+          "shippingNational": false,
+          "shippingInternational": false,
+          "imageLinks": [
+              "https://placehold.co/800x600/1100ff/FFFFFF.webp"
+          ],
+          "createdDate": "2021-08-30T10:04:31.955Z",
+          "listingID": "listing7628629",
+          "isPRO": false,
+          "_id": "612cad60a7534213e25e5ab1",
+          "title": "faucibus orci luctus",
+          "description": "Nulla facilisi. Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit.",
+          "price": 9243,
+          "Category": "Art",
+          "subCategory": "Painting",
+          "geometry": {
+              "type": "Point",
+              "_id": "612cad60a7534213e25e5ab2",
+              "coordinates": [
+                  67.83629737461912,
+                  25.75571208976163
+              ]
+          },
+          "firebaseUID": "UaWAulsqdVPbWcFTfka9dZU5Shw1",
+          "shippingID": "612b4e74a2eb7c249ad6624c",
+          "__v": 0
+      },
+      {
+          "currency": "USD",
+          "trade": false,
+          "shippingNational": false,
+          "shippingInternational": false,
+          "imageLinks": [
+              "https://placehold.co/800x400/00ff00/FFFFFF.webp",
+              "https://placehold.co/600x600/0011ff/FFFFFF.webp",
+              "https://placehold.co/500x400/ff0000/FFFFFF.webp"
+          ],
+          "createdDate": "2021-08-30T10:04:31.955Z",
+          "listingID": "listing1833262",
+          "isPRO": false,
+          "_id": "612cad60a7534213e25e5ab3",
+          "title": "vestibulum vestibulum ante",
+          "description": "Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem. Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat. Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.",
+          "price": 1414,
+          "Category": "Art",
+          "subCategory": "Fiber Art",
+          "geometry": {
+              "type": "Point",
+              "_id": "612cad60a7534213e25e5ab4",
+              "coordinates": [
+                  67.82753728994949,
+                  25.084566714615374
+              ]
+          },
+          "firebaseUID": "UaWAulsqdVPbWcFTfka9dZU5Shw1",
+          "shippingID": "612349b5600f6c6800fcde03",
+          "__v": 0
+      },
+      {
+          "currency": "USD",
+          "trade": false,
+          "shippingNational": true,
+          "shippingInternational": true,
+          "imageLinks": [
+              "https://placehold.co/600x400/0000ff/FFFFFF.webp",
+              "https://placehold.co/800x600/1100ff/FFFFFF.webp",
+              "https://placehold.co/500x400/ff0000/FFFFFF.webp",
+              "https://placehold.co/600x400/000000/FFFFFF.webp",
+              "https://placehold.co/800x400/00ff00/FFFFFF.webp"
+          ],
+          "createdDate": "2021-08-30T10:04:31.955Z",
+          "listingID": "listing5195277",
+          "isPRO": true,
+          "_id": "612cad60a7534213e25e5ab5",
+          "title": "quam pharetra magna ac consequat",
+          "description": "Morbi vel lectus in quam fringilla rhoncus. Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.",
+          "price": 6520,
+          "Category": "Art",
+          "subCategory": "Drawing",
+          "geometry": {
+              "type": "Point",
+              "_id": "612cad60a7534213e25e5ab6",
+              "coordinates": [
+                  67.56813530751617,
+                  25.302660330507912
+              ]
+          },
+          "firebaseUID": "UaWAulsqdVPbWcFTfka9dZU5Shw1",
+          "shippingID": "6123453c9006aa657aa56fc5",
+          "__v": 0
+      }
+      ],
       loadingListings: true,
       loadingCustomeMade:true,
       data: [],
@@ -1051,7 +1235,7 @@ class Home extends Component {
                       <Card
                         hoverable={true}
                         className="Cards"
-                        bodyStyle={{ padding: 5 }}
+                        bodyStyle={{ padding: 0 }}
                         style={{ width: (this.state.windowWidth <= 360) ? 200 : (this.state.windowWidth <= 576) ? 300 : 260, borderTopLeftRadius: '10px', borderTopRightRadius: '10px' }}
                         cover={<Link to={`/itemdescription/${item.listingID}`}>
                           <img onClick={() => {
@@ -1423,8 +1607,8 @@ class Home extends Component {
             {this.state.loadingListings === false && this.props.data.length > 0 &&
 
               <List
-                grid={{ gutter: 20, xxl: 4, xl: 4, lg: 3, md: 2, sm: 2 }}
-                dataSource={this.props.data}
+                grid={{ gutter: 20, xxl: 4, xl: 3, lg: 3, md: 2, sm: 2 }}
+                dataSource={this.state.upComingAuction}
                 renderItem={(item, index) => (
                   <List.Item>
                     <Slide bottom>
@@ -1546,6 +1730,188 @@ class Home extends Component {
             </div>
           </div>
         </div>
+
+        <div style={{ width: '100%', background: '#36ae7c' }}>
+          <div className='container'>
+            <Fade top cascade>
+              <h1 style={{ fontWeight: 'bold', textAlign: 'left', fontSize: this.state.windowWidth <= 375 ? 22 : 30 }}>Latest Blogs</h1>
+            </Fade>
+          </div>
+          <div style={{ width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'space-between' }}>
+
+            <List
+              grid={{ gutter: 26, xl: 4, xs: 1, sm: 3, md: 3, lg: 4, xxl: 6 }}
+              dataSource={this.props.serviceData.length > 5 ? this.props.serviceData.slice(Math.max(this.props.serviceData.length - 6, 0)) : this.props.serviceData}
+              renderItem={(item, index) => (
+                <List.Item>
+                  <Fade duration={2000}>
+                    <Card
+                      style={this.state.windowWidth < 360 ? { width: 200 } : this.state.windowWidth < 576 ? { width: 300 } : this.state.windowWidth < 768 ? { width: 200 } : this.state.windowWidth <= 992 ? { width: 200 } : this.state.windowWidth <= 1400 ? { width: 200 } : { width: 200 }}
+                      bodyStyle={{ padding: 0 }}
+                      cover={<Link to={`/exclusive-services/${item._id}/service-description`}>
+                        <img alt='cover not found' style={this.state.windowWidth < 360 ? { width: 200, height: 150 } : this.state.windowWidth < 576 ? { width: 300, height: 250 } : this.state.windowWidth < 768 ? { width: 200, height: 150 } : this.state.windowWidth <= 992 ? { width: 200, height: 150 } : this.state.windowWidth <= 1400 ? { width: 200, height: 150 } : { width: 200, height: 150 }} src={item.Images[0]} /></Link>}
+                    >
+                      <div >
+                        <div style={{ padding: 10 }}>
+                          <div style={{ display: 'flex', alignItems: 'center' }}>
+                            <div style={{ display: 'flex', alignItems: 'center' }}>
+                              <Avatar size="default" src={item.userImage} />
+                              <h4 style={{ margin: 0, fontWeight: 'bold', marginLeft: 10 }}>{item.userName}</h4>
+                            </div>
+                            <div style={{ display: 'flex', alignItems: 'center' }}>
+                              <Rate count={1} value={item.totalRatings} disabled={true} style={{ fontSize: '15', marginBottom: 5 }} autoFocus={true} />
+                              <h3 style={{ margin: 0, color: "#fadb14", fontWeight: 'bold', marginLeft: 5 }}>{item.totalRatings}</h3>
+                            </div>
+                          </div>
+                          <hr />
+                          <div>
+                            <Truncate style={{ fontWeight: 'bold', margin: 0 }}>{item.ServiceTitle}</Truncate>
+                            <br />
+                            <Truncate lines="3">{item.ServiceDescription}</Truncate>
+                          </div>
+                        </div>
+                        <div style={{ padding: 10, backgroundColor: "#eeeeee", display: "flex", justifyContent: 'space-between', alignItems: 'center' }}>
+                          <p style={{ margin: 0, display: 'flex' }}>Starting At : <h4 style={{ margin: 0, fontWeight: 'bold' }}>${item.Price}</h4></p>
+                        </div>
+                      </div>
+                    </Card>
+                  </Fade>
+                </List.Item>
+              )}
+
+            />
+            <div style={{ float: 'right' }}>
+              {this.props.serviceData.length >= 0 &&
+                <Link to={`/exclusive-services`}>
+                  See More
+                </Link>
+              }
+            </div>
+          </div>
+
+
+        </div>
+        <div style={{ width: '100%', background: '#d8ec8fb6' }}>
+          <div className='container'>
+            <Fade top cascade>
+              <h1 style={{ fontWeight: 'bold', textAlign: 'left', fontSize: this.state.windowWidth <= 375 ? 22 : 30 }}>Best Selling Products</h1>
+            </Fade>
+          </div>
+          <div style={{ width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'space-between' }}>
+
+            <List
+              grid={{ gutter: 26, xl: 4, xs: 1, sm: 3, md: 3, lg: 4, xxl: 6 }}
+              dataSource={this.props.serviceData.length > 5 ? this.props.serviceData.slice(Math.max(this.props.serviceData.length - 6, 0)) : this.props.serviceData}
+              renderItem={(item, index) => (
+                <List.Item>
+                  <Fade duration={2000}>
+                    <Card
+                      style={this.state.windowWidth < 360 ? { width: 200 } : this.state.windowWidth < 576 ? { width: 300 } : this.state.windowWidth < 768 ? { width: 200 } : this.state.windowWidth <= 992 ? { width: 200 } : this.state.windowWidth <= 1400 ? { width: 200 } : { width: 200 }}
+                      bodyStyle={{ padding: 0 }}
+                      cover={<Link to={`/exclusive-services/${item._id}/service-description`}>
+                        <img alt='cover not found' style={this.state.windowWidth < 360 ? { width: 200, height: 150 } : this.state.windowWidth < 576 ? { width: 300, height: 250 } : this.state.windowWidth < 768 ? { width: 200, height: 150 } : this.state.windowWidth <= 992 ? { width: 200, height: 150 } : this.state.windowWidth <= 1400 ? { width: 200, height: 150 } : { width: 200, height: 150 }} src={item.Images[0]} /></Link>}
+                    >
+                      <div >
+                        <div style={{ padding: 10 }}>
+                          <div style={{ display: 'flex', alignItems: 'center' }}>
+                            <div style={{ display: 'flex', alignItems: 'center' }}>
+                              <Avatar size="default" src={item.userImage} />
+                              <h4 style={{ margin: 0, fontWeight: 'bold', marginLeft: 10 }}>{item.userName}</h4>
+                            </div>
+                            <div style={{ display: 'flex', alignItems: 'center' }}>
+                              <Rate count={1} value={item.totalRatings} disabled={true} style={{ fontSize: '15', marginBottom: 5 }} autoFocus={true} />
+                              <h3 style={{ margin: 0, color: "#fadb14", fontWeight: 'bold', marginLeft: 5 }}>{item.totalRatings}</h3>
+                            </div>
+                          </div>
+                          <hr />
+                          <div>
+                            <Truncate style={{ fontWeight: 'bold', margin: 0 }}>{item.ServiceTitle}</Truncate>
+                            <br />
+                            <Truncate lines="3">{item.ServiceDescription}</Truncate>
+                          </div>
+                        </div>
+                        <div style={{ padding: 10, backgroundColor: "#eeeeee", display: "flex", justifyContent: 'space-between', alignItems: 'center' }}>
+                          <p style={{ margin: 0, display: 'flex' }}>Starting At : <h4 style={{ margin: 0, fontWeight: 'bold' }}>${item.Price}</h4></p>
+                        </div>
+                      </div>
+                    </Card>
+                  </Fade>
+                </List.Item>
+              )}
+
+            />
+            <div style={{ float: 'right' }}>
+              {this.props.serviceData.length >= 0 &&
+                <Link to={`/exclusive-services`}>
+                  See More
+                </Link>
+              }
+            </div>
+          </div>
+
+
+        </div>
+        <div style={{ width: '100%', background: '#ffff' }}>
+          <div className='container'>
+            <Fade top cascade>
+              <h1 style={{ fontWeight: 'bold', textAlign: 'left', fontSize: this.state.windowWidth <= 375 ? 22 : 30 }}>Technical Services</h1>
+            </Fade>
+          </div>
+          <div style={{ width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'space-between' }}>
+
+            <List
+              grid={{ gutter: 26, xl: 4, xs: 1, sm: 3, md: 3, lg: 4, xxl: 6 }}
+              dataSource={this.props.serviceData.length > 5 ? this.props.serviceData.slice(Math.max(this.props.serviceData.length - 6, 0)) : this.props.serviceData}
+              renderItem={(item, index) => (
+                <List.Item>
+                  <Fade duration={2000}>
+                    <Card
+                      style={this.state.windowWidth < 360 ? { width: 200 } : this.state.windowWidth < 576 ? { width: 300 } : this.state.windowWidth < 768 ? { width: 200 } : this.state.windowWidth <= 992 ? { width: 200 } : this.state.windowWidth <= 1400 ? { width: 200 } : { width: 200 }}
+                      bodyStyle={{ padding: 0 }}
+                      cover={<Link to={`/exclusive-services/${item._id}/service-description`}>
+                        <img alt='cover not found' style={this.state.windowWidth < 360 ? { width: 200, height: 150 } : this.state.windowWidth < 576 ? { width: 300, height: 250 } : this.state.windowWidth < 768 ? { width: 200, height: 150 } : this.state.windowWidth <= 992 ? { width: 200, height: 150 } : this.state.windowWidth <= 1400 ? { width: 200, height: 150 } : { width: 200, height: 150 }} src={item.Images[0]} /></Link>}
+                    >
+                      <div >
+                        <div style={{ padding: 10 }}>
+                          <div style={{ display: 'flex', alignItems: 'center' }}>
+                            <div style={{ display: 'flex', alignItems: 'center' }}>
+                              <Avatar size="default" src={item.userImage} />
+                              <h4 style={{ margin: 0, fontWeight: 'bold', marginLeft: 10 }}>{item.userName}</h4>
+                            </div>
+                            <div style={{ display: 'flex', alignItems: 'center' }}>
+                              <Rate count={1} value={item.totalRatings} disabled={true} style={{ fontSize: '15', marginBottom: 5 }} autoFocus={true} />
+                              <h3 style={{ margin: 0, color: "#fadb14", fontWeight: 'bold', marginLeft: 5 }}>{item.totalRatings}</h3>
+                            </div>
+                          </div>
+                          <hr />
+                          <div>
+                            <Truncate style={{ fontWeight: 'bold', margin: 0 }}>{item.ServiceTitle}</Truncate>
+                            <br />
+                            <Truncate lines="3">{item.ServiceDescription}</Truncate>
+                          </div>
+                        </div>
+                        <div style={{ padding: 10, backgroundColor: "#eeeeee", display: "flex", justifyContent: 'space-between', alignItems: 'center' }}>
+                          <p style={{ margin: 0, display: 'flex' }}>Starting At : <h4 style={{ margin: 0, fontWeight: 'bold' }}>${item.Price}</h4></p>
+                        </div>
+                      </div>
+                    </Card>
+                  </Fade>
+                </List.Item>
+              )}
+
+            />
+            <div style={{ float: 'right' }}>
+              {this.props.serviceData.length >= 0 &&
+                <Link to={`/exclusive-services`}>
+                  See More
+                </Link>
+              }
+            </div>
+          </div>
+
+
+        </div>
+      
 
         <Divider style={{ margin: 0 }}><h1>...</h1></Divider>
 

@@ -6,6 +6,7 @@ import './CSS/LoginSignupCss.css';
 import { url } from "../Constants";
 import firebase from 'firebase'
 import { Link } from "react-router-dom";
+import Navbar from "./Navbar";
 
 class LoginSignup extends PureComponent {
     constructor(props) {
@@ -122,6 +123,7 @@ class LoginSignup extends PureComponent {
     render() {
         return (
             <div className="loginSignup">
+            <Navbar />
                 <div className="container">
                     <div className="row">
                         <div className="col-6" style={{ paddingTop: '150px' }}>
