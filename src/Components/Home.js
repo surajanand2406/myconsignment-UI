@@ -1235,7 +1235,7 @@ class Home extends Component {
                       <Card
                         hoverable={true}
                         className="Cards"
-                        bodyStyle={{ padding: 0 }}
+                        bodyStyle={{ padding: 5 }}
                         style={{ width: (this.state.windowWidth <= 360) ? 200 : (this.state.windowWidth <= 576) ? 300 : 260, borderTopLeftRadius: '10px', borderTopRightRadius: '10px' }}
                         cover={<Link to={`/itemdescription/${item.listingID}`}>
                           <img onClick={() => {

@@ -371,3 +371,6 @@
      height: 300px;
      background-color: rgb(49, 151, 88);
    }
+   .ant-card-actions {
+     display: flex;
+   }
