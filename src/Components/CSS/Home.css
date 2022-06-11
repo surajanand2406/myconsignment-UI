@@ -121,8 +121,10 @@
 
 .home-container .How-To-Get-Start{
   width: 100%;
+  height: 300px;
   display: flex;
   justify-content: center;
+  background-color: #36ae7c;
 }
 .home-container .How-To-Get-Start .How-To-Get-Start-Inner-Container{
   width: 70%;
@@ -374,3 +376,167 @@
    .ant-card-actions {
      display: flex;
    }
+   .sponsor{
+    width: 100%;
+    height: 300px;
+    background-color: #74a73d;
+    text-align: center;
+   }
+   .sponsor1{
+    width: 450px;
+    height: 200px;
+     background-image: url(../View/imgs/sponsor2.png);
+   }
+   .sponsor2{
+    width: 450px;
+    height: 200px;
+    background-image: url(../View/imgs/sponsor1.png);
+  }
+  .affordablePrice{
+    text-align: center;
+    width: 100%;
+    height: 650px;
+    background-color: gray;
+  }
+  .affordablePrice h3{
+    color: #eeeeee;
+  }
+  .pad{
+    text-align: left;
+    padding-top: 20px;
+}
+  .basic{
+    padding-left: 15px;
+    width: 250px;
+    height: 500px;
+    background: #fff;
+    border-radius: 10px;
+}
+.hot-badge::after {
+  content: "BASIC";
+  color: #ffff !important;
+  position: absolute;
+  background: linear-gradient(to right, #e0e7e9, #2b48ec);
+  padding: 10px 80px;
+  box-shadow: 0 0 5px 3px #715e006e;
+  top: 19px;
+  right: -28px;
+  color: #5d4d00;
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  transform: rotateZ(43deg);
+  border-top-left-radius: 88px;
+  border-bottom-right-radius: 88px;
+  
+}
+.hot-badge1::after {
+  content: "PRO";
+  color: #ffff !important;
+  position: absolute;
+  background: linear-gradient(to right, #85eb9b, #11eb90);
+  padding: 10px 80px;
+  box-shadow: 0 0 5px 3px #715e006e;
+  top: 19px;
+  right: -28px;
+  color: #5d4d00;
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  transform: rotateZ(43deg);
+  border-top-left-radius: 88px;
+  border-bottom-right-radius: 88px;
+  
+}
+.hot-badge2::after {
+  content: "GOLD";
+  color: #ffff !important;
+  position: absolute;
+  background: linear-gradient(to right, #cae688, #a9e409);
+  padding: 10px 80px;
+  box-shadow: 0 0 5px 3px #715e006e;
+  top: 19px;
+  right: -28px;
+  color: #5d4d00;
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  transform: rotateZ(43deg);
+  border-top-left-radius: 88px;
+  border-bottom-right-radius: 88px;
+  
+}
+.hot-badge3::after {
+  content: "PLATINUM";
+  color: #ffff !important;
+  position: absolute;
+  background: linear-gradient(to right, #e0e7e9, #ec2b2b);
+  padding: 10px 80px;
+  box-shadow: 0 0 5px 3px #715e006e;
+  top: 19px;
+  right: -28px;
+  color: #5d4d00;
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  transform: rotateZ(43deg);
+  border-top-left-radius: 88px;
+  border-bottom-right-radius: 88px;
+  
+}
+.button{
+  background: linear-gradient(to right, #68c2db, #2b48ec);
+  border-radius: 5px;
+  border: none;
+  width: 200px;
+  height: 35px;
+
+}
+.button1{
+  background: linear-gradient(to right, #85eb9b, #11eb90);
+  border-radius: 5px;
+  border: none;
+  width: 200px;
+  height: 35px;
+
+}
+.button2{
+  background: linear-gradient(to right, #cae688, #a9e409);
+  border-radius: 5px;
+  border: none;
+  width: 200px;
+  height: 35px;
+
+}
+.button3{
+  background: linear-gradient(to right, #e0e7e9, #ec2b2b);
+  border-radius: 5px;
+  border: none;
+  width: 200px;
+  height: 35px;
+
+}
+
+.icon-basic{
+  color: blue;
+  font-size: 25px;
+}
+.icon-pro{
+  color: #00ff9d;
+  font-size: 25px;
+}
+.icon-gold{
+  color: #d5e409;
+  font-size: 25px;
+}
+.icon-plat{
+  color: #ec2b2b;
+  font-size: 25px;
+}
+
+.subscribe-channel{
+  height: 250px;
+  background: gray;
+  text-align: center;
+}
+.subscribe-channel h1{
+  padding-top: 60px;
+  font-size: 35px;
+  font-weight: 700px;
+}

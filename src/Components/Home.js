@@ -199,103 +199,12 @@ class Home extends Component {
 
       customeMadeData: [
         {
-            "currency": "USD",
-            "trade": false,
-            "shippingNational": true,
-            "shippingInternational": true,
-            "imageLinks": [
-                "https://placehold.co/500x400/ff0000/FFFFFF.webp"
-            ],
-            "createdDate": "2021-08-30T10:04:31.955Z",
-            "listingID": "listing7077103",
-            "isPRO": true,
-            "_id": "612cad60a7534213e25e5aab",
-            "title": "ultrices phasellus id sapien in",
-            "description": "Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui. Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc.",
-            "price": 7463,
-            "Category": "Art",
-            "subCategory": "Sculpture",
-            "geometry": {
-                "type": "Point",
-                "_id": "612cad60a7534213e25e5aac",
-                "coordinates": [
-                    67.52387879092444,
-                    24.995434941366632
-                ]
-            },
-            "firebaseUID": "UaWAulsqdVPbWcFTfka9dZU5Shw1",
-            "shippingID": "61263e89b7cfb6391d6e0e97",
-            "__v": 0
-        },
-        {
-            "currency": "USD",
-            "trade": false,
-            "shippingNational": false,
-            "shippingInternational": true,
-            "imageLinks": [
-                "https://placehold.co/800x600/1100ff/FFFFFF.webp",
-                "https://placehold.co/600x400/000000/FFFFFF.webp",
-                "https://placehold.co/800x400/00ff00/FFFFFF.webp"
-            ],
-            "createdDate": "2021-08-30T10:04:31.955Z",
-            "listingID": "listing5300799",
-            "isPRO": true,
-            "_id": "612cad60a7534213e25e5aad",
-            "title": "ipsum primis in",
-            "description": "Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.",
-            "price": 546,
-            "Category": "Art",
-            "subCategory": "Reproduction",
-            "geometry": {
-                "type": "Point",
-                "_id": "612cad60a7534213e25e5aae",
-                "coordinates": [
-                    67.8438659418378,
-                    25.801578261819138
-                ]
-            },
-            "firebaseUID": "UaWAulsqdVPbWcFTfka9dZU5Shw1",
-            "shippingID": "612349b5600f6c6800fcde03",
-            "__v": 0
-        },
-        {
-            "currency": "USD",
-            "trade": false,
-            "shippingNational": false,
-            "shippingInternational": true,
-            "imageLinks": [
-                "https://placehold.co/500x400/ff0000/FFFFFF.webp",
-                "https://placehold.co/600x600/0011ff/FFFFFF.webp"
-            ],
-            "createdDate": "2021-08-30T10:04:31.955Z",
-            "listingID": "listing8191773",
-            "isPRO": true,
-            "_id": "612cad60a7534213e25e5aaf",
-            "title": "dis parturient montes nascetur ridiculus",
-            "description": "Suspendisse potenti. Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris. Morbi non lectus.",
-            "price": 3836,
-            "Category": "Art",
-            "subCategory": "Mixed Media",
-            "geometry": {
-                "type": "Point",
-                "_id": "612cad60a7534213e25e5ab0",
-                "coordinates": [
-                    67.9716975584846,
-                    25.502621822612547
-                ]
-            },
-            "firebaseUID": "UaWAulsqdVPbWcFTfka9dZU5Shw1",
-            "shippingID": "61267e0bc647a54f7bdf7761",
-            "__v": 0
-        }],
-      upComingAuction: [
-        {
           "currency": "USD",
           "trade": false,
           "shippingNational": true,
           "shippingInternational": true,
           "imageLinks": [
-              "https://placehold.co/500x400/ff0000/FFFFFF.webp"
+            "https://placehold.co/500x400/ff0000/FFFFFF.webp"
           ],
           "createdDate": "2021-08-30T10:04:31.955Z",
           "listingID": "listing7077103",
@@ -307,26 +216,26 @@ class Home extends Component {
           "Category": "Art",
           "subCategory": "Sculpture",
           "geometry": {
-              "type": "Point",
-              "_id": "612cad60a7534213e25e5aac",
-              "coordinates": [
-                  67.52387879092444,
-                  24.995434941366632
-              ]
+            "type": "Point",
+            "_id": "612cad60a7534213e25e5aac",
+            "coordinates": [
+              67.52387879092444,
+              24.995434941366632
+            ]
           },
           "firebaseUID": "UaWAulsqdVPbWcFTfka9dZU5Shw1",
           "shippingID": "61263e89b7cfb6391d6e0e97",
           "__v": 0
-      },
-      {
+        },
+        {
           "currency": "USD",
           "trade": false,
           "shippingNational": false,
           "shippingInternational": true,
           "imageLinks": [
-              "https://placehold.co/800x600/1100ff/FFFFFF.webp",
-              "https://placehold.co/600x400/000000/FFFFFF.webp",
-              "https://placehold.co/800x400/00ff00/FFFFFF.webp"
+            "https://placehold.co/800x600/1100ff/FFFFFF.webp",
+            "https://placehold.co/600x400/000000/FFFFFF.webp",
+            "https://placehold.co/800x400/00ff00/FFFFFF.webp"
           ],
           "createdDate": "2021-08-30T10:04:31.955Z",
           "listingID": "listing5300799",
@@ -338,25 +247,25 @@ class Home extends Component {
           "Category": "Art",
           "subCategory": "Reproduction",
           "geometry": {
-              "type": "Point",
-              "_id": "612cad60a7534213e25e5aae",
-              "coordinates": [
-                  67.8438659418378,
-                  25.801578261819138
-              ]
+            "type": "Point",
+            "_id": "612cad60a7534213e25e5aae",
+            "coordinates": [
+              67.8438659418378,
+              25.801578261819138
+            ]
           },
           "firebaseUID": "UaWAulsqdVPbWcFTfka9dZU5Shw1",
           "shippingID": "612349b5600f6c6800fcde03",
           "__v": 0
-      },
-      {
+        },
+        {
           "currency": "USD",
           "trade": false,
           "shippingNational": false,
           "shippingInternational": true,
           "imageLinks": [
-              "https://placehold.co/500x400/ff0000/FFFFFF.webp",
-              "https://placehold.co/600x600/0011ff/FFFFFF.webp"
+            "https://placehold.co/500x400/ff0000/FFFFFF.webp",
+            "https://placehold.co/600x600/0011ff/FFFFFF.webp"
           ],
           "createdDate": "2021-08-30T10:04:31.955Z",
           "listingID": "listing8191773",
@@ -368,24 +277,115 @@ class Home extends Component {
           "Category": "Art",
           "subCategory": "Mixed Media",
           "geometry": {
-              "type": "Point",
-              "_id": "612cad60a7534213e25e5ab0",
-              "coordinates": [
-                  67.9716975584846,
-                  25.502621822612547
-              ]
+            "type": "Point",
+            "_id": "612cad60a7534213e25e5ab0",
+            "coordinates": [
+              67.9716975584846,
+              25.502621822612547
+            ]
           },
           "firebaseUID": "UaWAulsqdVPbWcFTfka9dZU5Shw1",
           "shippingID": "61267e0bc647a54f7bdf7761",
           "__v": 0
-      },
-      {
+        }],
+      upComingAuction: [
+        {
+          "currency": "USD",
+          "trade": false,
+          "shippingNational": true,
+          "shippingInternational": true,
+          "imageLinks": [
+            "https://placehold.co/500x400/ff0000/FFFFFF.webp"
+          ],
+          "createdDate": "2021-08-30T10:04:31.955Z",
+          "listingID": "listing7077103",
+          "isPRO": true,
+          "_id": "612cad60a7534213e25e5aab",
+          "title": "ultrices phasellus id sapien in",
+          "description": "Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui. Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc.",
+          "price": 7463,
+          "Category": "Art",
+          "subCategory": "Sculpture",
+          "geometry": {
+            "type": "Point",
+            "_id": "612cad60a7534213e25e5aac",
+            "coordinates": [
+              67.52387879092444,
+              24.995434941366632
+            ]
+          },
+          "firebaseUID": "UaWAulsqdVPbWcFTfka9dZU5Shw1",
+          "shippingID": "61263e89b7cfb6391d6e0e97",
+          "__v": 0
+        },
+        {
+          "currency": "USD",
+          "trade": false,
+          "shippingNational": false,
+          "shippingInternational": true,
+          "imageLinks": [
+            "https://placehold.co/800x600/1100ff/FFFFFF.webp",
+            "https://placehold.co/600x400/000000/FFFFFF.webp",
+            "https://placehold.co/800x400/00ff00/FFFFFF.webp"
+          ],
+          "createdDate": "2021-08-30T10:04:31.955Z",
+          "listingID": "listing5300799",
+          "isPRO": true,
+          "_id": "612cad60a7534213e25e5aad",
+          "title": "ipsum primis in",
+          "description": "Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.",
+          "price": 546,
+          "Category": "Art",
+          "subCategory": "Reproduction",
+          "geometry": {
+            "type": "Point",
+            "_id": "612cad60a7534213e25e5aae",
+            "coordinates": [
+              67.8438659418378,
+              25.801578261819138
+            ]
+          },
+          "firebaseUID": "UaWAulsqdVPbWcFTfka9dZU5Shw1",
+          "shippingID": "612349b5600f6c6800fcde03",
+          "__v": 0
+        },
+        {
+          "currency": "USD",
+          "trade": false,
+          "shippingNational": false,
+          "shippingInternational": true,
+          "imageLinks": [
+            "https://placehold.co/500x400/ff0000/FFFFFF.webp",
+            "https://placehold.co/600x600/0011ff/FFFFFF.webp"
+          ],
+          "createdDate": "2021-08-30T10:04:31.955Z",
+          "listingID": "listing8191773",
+          "isPRO": true,
+          "_id": "612cad60a7534213e25e5aaf",
+          "title": "dis parturient montes nascetur ridiculus",
+          "description": "Suspendisse potenti. Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris. Morbi non lectus.",
+          "price": 3836,
+          "Category": "Art",
+          "subCategory": "Mixed Media",
+          "geometry": {
+            "type": "Point",
+            "_id": "612cad60a7534213e25e5ab0",
+            "coordinates": [
+              67.9716975584846,
+              25.502621822612547
+            ]
+          },
+          "firebaseUID": "UaWAulsqdVPbWcFTfka9dZU5Shw1",
+          "shippingID": "61267e0bc647a54f7bdf7761",
+          "__v": 0
+        },
+        {
           "currency": "USD",
           "trade": false,
           "shippingNational": false,
           "shippingInternational": false,
           "imageLinks": [
-              "https://placehold.co/800x600/1100ff/FFFFFF.webp"
+            "https://placehold.co/800x600/1100ff/FFFFFF.webp"
           ],
           "createdDate": "2021-08-30T10:04:31.955Z",
           "listingID": "listing7628629",
@@ -397,26 +397,26 @@ class Home extends Component {
           "Category": "Art",
           "subCategory": "Painting",
           "geometry": {
-              "type": "Point",
-              "_id": "612cad60a7534213e25e5ab2",
-              "coordinates": [
-                  67.83629737461912,
-                  25.75571208976163
-              ]
+            "type": "Point",
+            "_id": "612cad60a7534213e25e5ab2",
+            "coordinates": [
+              67.83629737461912,
+              25.75571208976163
+            ]
           },
           "firebaseUID": "UaWAulsqdVPbWcFTfka9dZU5Shw1",
           "shippingID": "612b4e74a2eb7c249ad6624c",
           "__v": 0
-      },
-      {
+        },
+        {
           "currency": "USD",
           "trade": false,
           "shippingNational": false,
           "shippingInternational": false,
           "imageLinks": [
-              "https://placehold.co/800x400/00ff00/FFFFFF.webp",
-              "https://placehold.co/600x600/0011ff/FFFFFF.webp",
-              "https://placehold.co/500x400/ff0000/FFFFFF.webp"
+            "https://placehold.co/800x400/00ff00/FFFFFF.webp",
+            "https://placehold.co/600x600/0011ff/FFFFFF.webp",
+            "https://placehold.co/500x400/ff0000/FFFFFF.webp"
           ],
           "createdDate": "2021-08-30T10:04:31.955Z",
           "listingID": "listing1833262",
@@ -428,28 +428,28 @@ class Home extends Component {
           "Category": "Art",
           "subCategory": "Fiber Art",
           "geometry": {
-              "type": "Point",
-              "_id": "612cad60a7534213e25e5ab4",
-              "coordinates": [
-                  67.82753728994949,
-                  25.084566714615374
-              ]
+            "type": "Point",
+            "_id": "612cad60a7534213e25e5ab4",
+            "coordinates": [
+              67.82753728994949,
+              25.084566714615374
+            ]
           },
           "firebaseUID": "UaWAulsqdVPbWcFTfka9dZU5Shw1",
           "shippingID": "612349b5600f6c6800fcde03",
           "__v": 0
-      },
-      {
+        },
+        {
           "currency": "USD",
           "trade": false,
           "shippingNational": true,
           "shippingInternational": true,
           "imageLinks": [
-              "https://placehold.co/600x400/0000ff/FFFFFF.webp",
-              "https://placehold.co/800x600/1100ff/FFFFFF.webp",
-              "https://placehold.co/500x400/ff0000/FFFFFF.webp",
-              "https://placehold.co/600x400/000000/FFFFFF.webp",
-              "https://placehold.co/800x400/00ff00/FFFFFF.webp"
+            "https://placehold.co/600x400/0000ff/FFFFFF.webp",
+            "https://placehold.co/800x600/1100ff/FFFFFF.webp",
+            "https://placehold.co/500x400/ff0000/FFFFFF.webp",
+            "https://placehold.co/600x400/000000/FFFFFF.webp",
+            "https://placehold.co/800x400/00ff00/FFFFFF.webp"
           ],
           "createdDate": "2021-08-30T10:04:31.955Z",
           "listingID": "listing5195277",
@@ -461,20 +461,20 @@ class Home extends Component {
           "Category": "Art",
           "subCategory": "Drawing",
           "geometry": {
-              "type": "Point",
-              "_id": "612cad60a7534213e25e5ab6",
-              "coordinates": [
-                  67.56813530751617,
-                  25.302660330507912
-              ]
+            "type": "Point",
+            "_id": "612cad60a7534213e25e5ab6",
+            "coordinates": [
+              67.56813530751617,
+              25.302660330507912
+            ]
           },
           "firebaseUID": "UaWAulsqdVPbWcFTfka9dZU5Shw1",
           "shippingID": "6123453c9006aa657aa56fc5",
           "__v": 0
-      }
+        }
       ],
       loadingListings: true,
-      loadingCustomeMade:true,
+      loadingCustomeMade: true,
       data: [],
       page: 1,
       totalPages: 1,
@@ -919,6 +919,9 @@ class Home extends Component {
 
     // const ArrowLeft = Arrow({ text: '<', className: 'arrow-prev' });
     // const ArrowRight = Arrow({ text: '>', className: 'arrow-next' });
+    const searchStyle = {
+      transition: 'all 1s ease'
+  }
 
     const sortByPrice = (
       <Menu onClick={({ key }) => {
@@ -1431,7 +1434,7 @@ class Home extends Component {
                         hoverable={true}
                         className="Cards"
                         bodyStyle={{ padding: 20 }}
-                        style={{ width: (this.state.windowWidth <= 360) ? 200 : (this.state.windowWidth <= 576) ? 300 : 260, borderTopLeftRadius: '10px', borderTopRightRadius: '10px'}}
+                        style={{ width: (this.state.windowWidth <= 360) ? 200 : (this.state.windowWidth <= 576) ? 300 : 260, borderTopLeftRadius: '10px', borderTopRightRadius: '10px' }}
                         cover={<Link to={`/itemdescription/${item.listingID}`}>
                           <img onClick={() => {
                             if (item.isFavorited === true) {
@@ -1911,39 +1914,138 @@ class Home extends Component {
 
 
         </div>
-      
 
-        <Divider style={{ margin: 0 }}><h1>...</h1></Divider>
+        <div className='sponsor'>
+        <Fade bottom><h1>Sponsorship</h1></Fade>
+          <div style={{ display: 'flex', justifyContent: 'space-evenly' }}>
+          <Slide left><div className='sponsor1'></div></Slide>
+          <Slide right> <div className='sponsor2'></div></Slide>
+          </div>
+        </div>
+
+        <div className='affordablePrice'>
+        <Slide left><h2>Affordable Pricing</h2></Slide>
+        <Slide bottom> <h3>Billed Early</h3></Slide>
+          <div className="container pad">
+    <div className="row">
+    <Slide right>
+      <div className="col-lg-3 hot-badge" >
+        <div className="basic">
+          <h2>Basic Users</h2>
+          <h4>Free/Forever</h4>
+          <h4><Iconn type="CheckCircleFilled" theme="Filled" style={{ color: 'blue'}}/>&nbsp;&nbsp;Add up to 40 listings.</h4>
+          <h4><Iconn type="CheckCircleFilled" theme="Filled" style={{ color: 'blue'}}/>&nbsp;&nbsp;Add up to 5 images to each<br/> listings.
+          </h4>
+          <h4><Iconn type="CheckCircleFilled" theme="Filled" style={{ color: 'blue'}}/>&nbsp;&nbsp;Messaging.</h4>
+          <h4><Iconn type="CheckCircleFilled" theme="Filled" style={{ color: 'blue'}}/>&nbsp;&nbsp;Shipping profiles.</h4>
+          <h4><Iconn type="CheckCircleFilled" theme="Filled" style={{ color: 'blue'}}/>&nbsp;&nbsp;Social Media sharing.</h4>
+          <p>
+            On each sale we charge 10% plus<br/>
+            10 cents (for porducts) or 20% plus<br/>
+            20 cents (for Services)
+          </p>
+          <h4 style={{textAlign: 'center', color:'blue'}}><a>See more...</a></h4>
+          <div className="butn">
+            <button type="button" className="button">Try for Free</button>
+          </div>
+        </div>
+      </div>
+      </Slide>
+      <Slide top>
+      <div className="col-lg-3 hot-badge1">
+        <div className="basic">
+          <h2>PRO Users</h2>
+          <h4>$4.95/YEAR</h4>
+          <h4><Iconn type="CheckCircleFilled" theme="Filled" style={{ color: 'blue'}}/>&nbsp;&nbsp;Everything for Basic Users.</h4>
+          <h4><Iconn type="CheckCircleFilled" theme="Filled" style={{ color: 'blue'}}/>&nbsp;&nbsp;Add up to 300 listings (or<br/>may be unlimited
+            if don't have<br/> any third package right now).</h4>
+          <h4><Iconn type="CheckCircleFilled" theme="Filled" style={{ color: 'blue'}}/>&nbsp;&nbsp;Access to live Auctions.</h4>
+          <h4><Iconn type="CheckCircleFilled" theme="Filled" style={{ color: 'blue'}}/>&nbsp;&nbsp;Pro Badge on all listings.</h4>
+          <p>
+            On each sale we charge 10% plus<br/>
+            10 cents (for porducts) or 20% plus<br/>
+            20 cents (for Services)
+          </p>
+          <h4 style={{textAlign: 'center', color:'blue'}}><a>See more...</a></h4>
+          <div className="butn1">
+            <button type="button" class="button1">Subscribe to PRO</button>
+          </div>
+        </div>
+      </div>
+      </Slide>
+      <Slide bottom>
+      <div className="col-lg-3 hot-badge2">
+        <div className="basic">
+          <h2>Gold Users</h2>
+          <h4>$7.95/YEAR</h4>
+          <h4><Iconn type="CheckCircleFilled" theme="Filled" style={{ color: 'blue'}}/>&nbsp;&nbsp;Gold Badge.</h4>
+          <h4><Iconn type="CheckCircleFilled" theme="Filled" style={{ color: 'blue'}}/>&nbsp;&nbsp;Unlimited listings.</h4>
+          <h4><Iconn type="CheckCircleFilled" theme="Filled" style={{ color: 'blue'}}/>&nbsp;&nbsp;Blog (with 5-10 items for<br/> promotion).
+          </h4>
+          <p>
+            On each sale we charge 10% plus<br/>
+            10 cents (for porducts) or 20% plus<br/>
+            20 cents (for Services)
+          </p>
+          <h4 style={{textAlign: 'center', color:'blue'}}><a>See more...</a></h4>
+          <div className="butn2">
+            <button type="button" className="button2">Subscribe to Gold</button>
+          </div>
+        </div>
+      </div>
+      </Slide>
+      <Slide left>
+      <div className="col-lg-3 hot-badge3">
+        <div className="basic">
+          <h2>Gold Users</h2>
+          <h4>$9.95/YEAR</h4>
+          <h4><Iconn type="CheckCircleFilled" theme="Filled" style={{ color: 'blue'}}/>&nbsp;&nbsp;Coming soon.</h4>
+          <h4><Iconn type="CheckCircleFilled" theme="Filled" style={{ color: 'blue'}}/>&nbsp;&nbsp;Wholesale.</h4>
+          <p>
+            On each sale we charge 10% plus<br/>
+            10 cents (for porducts) or 20% plus<br/>
+            20 cents (for Services)
+          </p>
+          <h4 style={{textAlign: 'center', color:'blue'}}><a>See more...</a></h4>
+          <div className="butn3">
+            <button type="button3" className="button3">Coming Soon</button>
+          </div>
+        </div>
+      </div>
+      </Slide>
+    </div>
+  </div>
+        </div>
 
         <div className="How-To-Get-Start">
           <div className="How-To-Get-Start-Inner-Container">
             <h1 style={{ fontSize: 30, marginBottom: 50, fontWeight: 'bold', textAlign: 'center' }}>How to Get Started</h1>
             <div style={{ display: 'flex', alignItems: 'center', justifyContent: "space-between", width: '100%' }}>
               <Fade left duration={500}>
-                <div style={{ display: 'flex', flexDirection: "column", alignItems: 'center', width: 100 }}>
-                  <img src={Reg} style={{ width: "100%", maxHeight: "100%" }} />
+                <div style={{ display: 'flex', flexDirection: "column", alignItems: 'center', width: 200 }}>
+                  <img src={image1} style={{ width: "150px", maxHeight: "150px" }} />
                   <h3 style={{ fontWeight: 'bold' }}>Register</h3>
                 </div>
               </Fade>
-              <Fade left duration={1000}>
+              {/* <Fade left duration={1000}>
                 <div style={{ width: 350 }}>
                   <img src={raw} style={{ width: "100%", maxHeight: "100%" }} />
                 </div>
-              </Fade>
+              </Fade> */}
               <Fade left duration={1500}>
-                <div style={{ display: 'flex', flexDirection: "column", alignItems: 'center', width: 100 }}>
-                  <img src={login} style={{ width: "100%", maxHeight: "100%" }} />
+                <div style={{ display: 'flex', flexDirection: "column", alignItems: 'center', width: 200 }}>
+                  <img src={image4} style={{ width: "200px", maxHeight: "200px" }} />
                   <h3 style={{ fontWeight: 'bold' }}>Login</h3>
                 </div>
               </Fade>
-              <Fade left duration={2000}>
+              {/* <Fade left duration={2000}>
                 <div style={{ width: 350 }}>
                   <img src={raw} style={{ width: "100%" }} />
                 </div>
-              </Fade>
+              </Fade> */}
               <Fade left duration={2500}>
-                <div style={{ display: 'flex', flexDirection: "column", alignItems: 'center', width: 100 }}>
-                  <img src={Signin} style={{ width: "100%", maxHeight: "100%" }} />
+                <div style={{ display: 'flex', flexDirection: "column", alignItems: 'center', width: 200 }}>
+                  <img src={image3} style={{ width: "150px", maxHeight: "150px" }} />
                   <h3 style={{ fontWeight: 'bold' }}>Get Access</h3>
                 </div>
               </Fade>
@@ -1977,7 +2079,20 @@ class Home extends Component {
             </div>
           </div>
         </div>
-
+        <div className='subscribe-channel'>
+        <Slide left><h1>Subscribe to Our Newsletter</h1></Slide>
+        <Slide right><div className="search-box1" style={{ ...searchStyle }}>
+                    <Input onKeyDown={e => {
+                        if (e.which === 13 || e.keyCode === 13) {
+                            this.handleSearch(e)
+                        }
+                    }} onSubmit={this.handleSearch} name='searchText' onChange={e => {
+                        this.setState({
+                            searchText: e.target.value
+                        })
+                    }} style={{ width: this.state.windowWidth <= 768 ? '100%' : '50%', border: 'solid 1px gray', borderRadius: 15, backgroundColor: '#eeeeee', alignItems:'center' }} size="large" placeholder="Enter your email here.." />
+                </div></Slide>
+        </div>
         <Modal visible={this.state.showShareModal} onCancel={() => { this.setState({ showShareModal: false }) }}>
           <img
             src={this.state.selectedItem !== null ? this.state.selectedItem.imageLinks[0] : ""}
