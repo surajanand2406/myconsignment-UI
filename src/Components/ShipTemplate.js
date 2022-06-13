@@ -426,7 +426,7 @@ class ShipTemplate extends Component {
 
                         <br />
                         <div style={{ display: 'flex', justifyContent: "center", flexDirection: "row" }}>
-                            <Button loading={this.state.uploading} disabled={this.state.uploading} type="primary" id='shipSub' style={{backgroundColor:"darkgreen",borderColor:"darkcyan",width:200,fontSize:18}} onClick={this.handleSubmit} shape='round' size='large'>
+                            <Button loading={this.state.uploading} disabled={this.state.uploading} type="primary" id='shipSub' onClick={this.handleSubmit} shape='round' size='large'>
                                 Submit
                                </Button>
                         </div>

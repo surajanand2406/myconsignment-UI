@@ -20,3 +20,35 @@
       display: flex;
       justify-content: space-around;
   }
+  .social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .social Button {
+    border: 1px solid #065fd4;
+    border-radius: 12px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: #065fd4;
+    padding: 12px 12px 12px 12px;
+    position: relative;
+    margin: 0px 8px;
+    width: 125px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  
+  }
+
+  .social img {
+    max-width: 15px;
+    margin-right: 6px;
+    max-height: 16px;
+    height: auto;
+  }

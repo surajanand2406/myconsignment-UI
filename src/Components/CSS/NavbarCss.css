@@ -191,3 +191,25 @@
     }
 
 }
+.login-page{
+    width: 450;
+}
+
+.logowrap1 {
+    width: 100%;
+    
+  }
+  .loginLogo1 {
+    height: 30px;
+    padding-left: 100px;
+    text-align: center;
+  }
+
+  Form{
+      padding: 20px !important;
+  }
+  .fb{
+      text-align: end;
+      display: flex;
+      justify-content: space-around;
+  }

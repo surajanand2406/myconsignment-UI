@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import './CSS/NavbarCss.css';
 import { Icon } from '@ant-design/compatible';
-import { Button, Divider, Modal, Form, Input,   Select, Avatar, Drawer, Radio, Upload, Tooltip, message } from 'antd'
+import { Button, Divider, Modal, Form, Input, Select, Avatar, Drawer, Radio, Upload, Tooltip, message } from 'antd'
 import ReactSelect from 'react-select';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTimes } from '@fortawesome/free-solid-svg-icons'
@@ -14,8 +14,10 @@ import Logo from './my1.png'
 import Firebase from 'firebase'
 import { confirmAlert } from 'react-confirm-alert'; // Import
 import 'react-confirm-alert/src/react-confirm-alert.css'; // Import css
-import {countries} from './CustomMade/countries'
+import { countries } from './CustomMade/countries'
 import Login from './View/LoginSignup/Login';
+import SignUp from './View/LoginSignup/Signup';
+
 
 const { Option } = Select
 
@@ -117,8 +119,8 @@ class Navbar extends Component {
             showDraftModal: false,
             draftValue: 1,
             shippingID: "",
-            videoFile:null,
-            videoURL:""
+            videoFile: null,
+            videoURL: ""
         }
         this.state = {
             ...this.initialState
@@ -148,12 +150,12 @@ class Navbar extends Component {
                     {
                         label: 'Yes',
                         onClick: () => {
-                        if(this.state.videoFile!==null){
-                            this.handleVideoFileUpload()
-                        }
-                        else{
-                            this.handleFileUpload()
-                        }
+                            if (this.state.videoFile !== null) {
+                                this.handleVideoFileUpload()
+                            }
+                            else {
+                                this.handleFileUpload()
+                            }
                         }
                     },
                     {
@@ -210,56 +212,56 @@ class Navbar extends Component {
                 Category: this.state.Category,
                 subCategory: this.state.subCategory,
                 location: {
-                    longitude: this.props.currentLocation!==null?this.props.currentLocation.lng: "67.054371",
-                    latitude: this.props.currentLocation!==null ? this.props.currentLocation.lat :"24.886230"
+                    longitude: this.props.currentLocation !== null ? this.props.currentLocation.lng : "67.054371",
+                    latitude: this.props.currentLocation !== null ? this.props.currentLocation.lat : "24.886230"
                 },
                 currency: "USD",
                 accountID: this.props.paymentInfo !== null ? this.props.paymentInfo.accountID : '',
                 shippingID: this.state.shippingCheckboxValue !== 'Pickup' ? this.state.shippingID : ""
             }
-            if(this.state.shippingCheckboxValue==='Pickup'){
+            if (this.state.shippingCheckboxValue === 'Pickup') {
                 delete data.shippingID
             }
-            if(this.state.shippingCheckboxValue!=='Pickup' && data.shippingID==null){
+            if (this.state.shippingCheckboxValue !== 'Pickup' && data.shippingID == null) {
                 message.error('You must select shipping profile')
                 return
             }
-            if(this.state.videoURL!==''){
+            if (this.state.videoURL !== '') {
                 data.video = this.state.videoURL
             }
-            console.log('listing=>',data)
+            console.log('listing=>', data)
             fetch(url + '/api/addListing', { method: "POST", body: JSON.stringify(data), headers: { "Content-Type": "application/json" } }).then(res => res.json()).then(resData => {
                 this.setState({ loading: false, showLogo: false })
                 if (resData.error)
                     alert(resData.message)
                 else {
-                    if(resData.message==='Success'){
+                    if (resData.message === 'Success') {
 
-                    this.props.pushListing(resData.data)
+                        this.props.pushListing(resData.data)
 
-                    //   this.props.navigation.navigate('HomeScreen')
-                    this.setState({
-                        ...this.initialState
-                    })
-                    this.handleCloseDrawer()
+                        //   this.props.navigation.navigate('HomeScreen')
+                        this.setState({
+                            ...this.initialState
+                        })
+                        this.handleCloseDrawer()
                     }
-                    else{
+                    else {
                         console.log(resData)
                         message.error(resData.err._message)
                     }
                 }
-            }).catch(err=>alert(err))
+            }).catch(err => alert(err))
         }
         else {
             alert("Listing must have at least one image")
         }
     }
-    handleVideoFileUpload(){
-        if(this.state.videoFile!==null){
+    handleVideoFileUpload() {
+        if (this.state.videoFile !== null) {
             let storage = Firebase.storage()
             let storageRef = storage.ref(`artisan/djiosjo290jcjew9cjw3d/video` + Date.now())
             let task = storageRef.put(this.state.videoFile)
-            task.on('state_changed', (snapshot)=>{
+            task.on('state_changed', (snapshot) => {
                 let progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
                 //   console.log('Upload is ' + progress.toFixed(2) + '% done');
                 switch (snapshot.state) {
@@ -272,17 +274,17 @@ class Navbar extends Component {
                     default:
                         return
                 }
-            },  (error)=> {
+            }, (error) => {
                 message.error(error.message)
             }, () => {
-                storageRef.getDownloadURL().then((downloadURL)=>{
+                storageRef.getDownloadURL().then((downloadURL) => {
                     this.setState({
                         videoURL: downloadURL
                     })
                     this.handleFileUpload()
                 });
 
-            }) 
+            })
         }
     }
     handleFileUpload() {
@@ -290,7 +292,7 @@ class Navbar extends Component {
             uploading: true
         })
         let images = this.state.fileList
-        if(images.length>0){
+        if (images.length > 0) {
             images.map((image) => {
                 let storage = Firebase.storage()
                 let storageRef = storage.ref(`artisan/djiosjo290jcjew9cjw3d/image` + Date.now())
@@ -324,7 +326,7 @@ class Navbar extends Component {
                 })
             })
         }
-        else{
+        else {
             message.error('At least 1 image is required')
         }
     }
@@ -447,14 +449,15 @@ class Navbar extends Component {
 
     handleLogIn = (value) => {
         // this.setState({ isLoginModal: value, isSignUpModal: false })
-        return(<Login/>)
+        return (<Login />)
     }
     handleLogInModalCancel = (value) => {
         this.setState({ isLoginModal: value })
     }
 
     handleSignUpModal = (value = true) => {
-        this.setState({ isSignUpModal: value, isLoginModal: false })
+        // this.setState({ isSignUpModal: value, isLoginModal: false })
+        return(<SignUp />)
     }
     handleSignUpModalCancel = (value) => {
         this.setState({ isSignUpModal: value })
@@ -606,8 +609,8 @@ class Navbar extends Component {
 
         return (
             <div className="navbar-container">
-                <Select defaultValue={'ENG'} options={myLang} style={{ width: this.state.windowWidth <= 576 ? '100px' : '70px', height: '30px' }}/>
-                <Select defaultValue={'USD'} options={myCurr} style={{ width: this.state.windowWidth <= 576 ? '10px' : '70px', height: '30px' }}/>
+                <Select defaultValue={'ENG'} options={myLang} style={{ width: this.state.windowWidth <= 576 ? '100px' : '70px', height: '30px' }} />
+                <Select defaultValue={'USD'} options={myCurr} style={{ width: this.state.windowWidth <= 576 ? '10px' : '70px', height: '30px' }} />
                 {/* <Link to="/" className="logo">
                     <img src={Logo} alt='logo not found' style={{ width: this.state.windowWidth <= 576 ? '100%' : '80%', height: '100%' }} />
                 </Link> */}
@@ -629,10 +632,10 @@ class Navbar extends Component {
                     <Link to="/custom-made"><li className="l1 l2">Custom Made</li></Link>
                     <Link to='/exclusive-services'><li className="l1 l2">Exclusive Services</li></Link>
                     <Link to='/sponsor'><li className="l1 l2">Sponsorship</li></Link> */}
-                    {/* {this.props.UID !== '' && <li ><Button className="AddListingsFloatButton" size={this.state.windowWidth <= 576 ? 'small' : 'large'} icon="plus" shape="square" onClick={this.handleAddListing}></Button></li>}
-                    {this.props.UID !== '' && <li ><Button className="AddListings" shape="round" size="large" onClick={this.handleAddListing}>Add Listing</Button></li>} */}
+                    {this.props.UID !== '' && <li ><Button className="AddListingsFloatButton" size={this.state.windowWidth <= 576 ? 'small' : 'large'} icon="plus" shape="square" onClick={this.handleAddListing}></Button></li>}
+                    {this.props.UID !== '' && <li ><Button className="AddListings" shape="round" size="large" onClick={this.handleAddListing}>Add Listing</Button></li>}
                     <Link to='/loginSignup'>{this.props.UID === '' && <li><Button shape="round" className='button1' size={this.state.windowWidth <= 576 ? 'small' : '20px'} onClick={this.handleLogIn}>Login</Button></li>}</Link>
-                    {this.props.UID === '' && <li className="l1 button2"><Button shape="round" size="20px" onClick={this.handleSignUpModal}>Signup</Button></li>}
+                    <Link to='/Signup'>{this.props.UID === '' && <li className="l1 button2"><Button shape="round" size="20px" onClick={this.handleSignUpModal}>Signup</Button></li>}</Link>
 
                     <li className="side-menu"><Icon type="menu" style={{ fontSize: this.state.windowWidth <= 576 ? '20px' : '25px' }} onClick={this.handleSidebar} /></li>
                 </ul>
@@ -784,7 +787,7 @@ class Navbar extends Component {
                                     />
                                     <Button onClick={this.handleSKU} type='link'>
                                         Auto Generate SKU
-                                        </Button>
+                                    </Button>
                                 </div>}
                                 {this.props.isPRO === true && <div>
                                     <label>Tags (max 10):</label>
@@ -830,21 +833,21 @@ class Navbar extends Component {
                                         console.log(e.target.files[0])
                                         this.setState({
                                             filename: e.target.files[0].name,
-                                            videoFile:e.target.files[0]
+                                            videoFile: e.target.files[0]
                                         })
                                         var reader = new FileReader();
-                                        reader.onload =  (res)=> {
+                                        reader.onload = (res) => {
                                             const media = new Audio(reader.result);
                                             media.onloadedmetadata = () => {
                                                 console.log(media.duration); // this would give duration of the video/audio file
-                                            let duration = media.duration
-                                            if(duration>30 || duration ==='Infinity'){
-                                                alert('Video can not be greater than 30 seconds')
-                                                this.setState({
-                                                    filename:"",
-                                                    videoFile:null
-                                                })
-                                            }
+                                                let duration = media.duration
+                                                if (duration > 30 || duration === 'Infinity') {
+                                                    alert('Video can not be greater than 30 seconds')
+                                                    this.setState({
+                                                        filename: "",
+                                                        videoFile: null
+                                                    })
+                                                }
                                             };
                                         };
                                         reader.readAsDataURL(e.target.files[0]);
@@ -891,7 +894,7 @@ class Navbar extends Component {
                                         style={{ width: "30%" }}
                                         defaultValue={1}
                                     /> %
-                                    </div>}
+                                </div>}
 
                                 <br />
                                 <br />
@@ -1105,9 +1108,9 @@ class LogInModal extends React.Component {
                 bodyStyle={{ padding: 0 }}
             >
                 <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', padding: '20px', marginTop: '20px' }}>
-                    <br/>
-                    <br/>
-                    <br/>
+                    <br />
+                    <br />
+                    <br />
                     <div style={{ maxWidth: "100%" }}>
                         <img
                             style={{ width: 200, marginTop: 30 }}
@@ -1122,8 +1125,8 @@ class LogInModal extends React.Component {
                     <Form>
                         <Input onChange={this.handleChange} name='email' style={{ height: '40px', marginBottom: '10px' }} placeholder="Email" prefix={<Icon type="mail" style={{ color: 'gray', fontSize: '15px' }} />} />
                         <Input.Password onChange={this.handleChange} name='password' style={{ height: '40px', marginBottom: '10px' }} placeholder="Password" prefix={<Icon type="lock" style={{ color: 'gray', fontSize: '15px' }} />} />
-                        <div style={{display:'flex',alignItems:'center', justifyContent:'center',flexDirection:'row'}}>
-                        <Button onClick={this.handleSubmit} shape="round" style={{ backgroundColor: 'darkgreen', color: 'white', height: '40px', width: '150px', fontSize: '18px' }}>Login</Button>
+                        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'row' }}>
+                            <Button onClick={this.handleSubmit} shape="round" style={{ backgroundColor: 'darkgreen', color: 'white', height: '40px', width: '150px', fontSize: '18px' }}>Login</Button>
                         </div>
                     </Form>
                     <Divider><p style={{ color: '#a2a2a2', fontSize: '18px' }}>OR</p></Divider>
@@ -1302,7 +1305,7 @@ function mapStateToProps(state) {
         paymentInfo: state.rootReducer.paymentInfo,
         isPRO: state.rootReducer.isPRO,
         shippings: state.rootReducer.shippings,
-        currentLocation:state.rootReducer.currentLocation
+        currentLocation: state.rootReducer.currentLocation
     })
 }
 function mapActionsToProps(dispatch) {

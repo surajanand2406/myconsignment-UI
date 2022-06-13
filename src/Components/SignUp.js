@@ -1,14 +1,14 @@
-import { Form } from "antd";
+
 import React, { PureComponent } from "react";
-import { Input, Button } from "antd";
+import { Button, Form, Input, Select, Avatar, Drawer, Radio, Upload, Tooltip, message } from 'antd'
 import { Icon } from '@ant-design/compatible';
 import './CSS/LoginSignupCss.css';
 import { url } from "../Constants";
 import firebase from 'firebase'
-import { Link } from "react-router-dom";
+import { countries } from './CustomMade/countries'
 import Navbar from "./Navbar";
 
-class LoginSignup extends PureComponent {
+class SignUp extends PureComponent{
     constructor(props) {
         super(props)
         this.initialState = {
@@ -83,31 +83,7 @@ class LoginSignup extends PureComponent {
             // ...
         });
     }
-    handleLogout() {
-        firebase.auth().signOut().then(() => {
-            let data = {
-                firebaseUID: this.props.UID
-            }
-            localStorage.removeItem('userData')
-            fetch(url + '/api/logout', { method: "PUT", body: JSON.stringify(data), headers: { "Content-Type": "application/json" } })
-                .then(res => res.json())
-                .then(response => {
-                    if (response.message === 'Success') {
-                        //    this.props.navigation.navigate('ProviderLogin')
-                        this.props.setUID('')
-                        this.setState({
-                            isProfileSideBar: false
-                        })
-                        this.props.setUserInfo(null)
-                        this.props.history.push('/')
 
-                    }
-                })
-        }).catch((error) => {
-            // An error happened.
-            alert('Logout failed...')
-        });
-    }
     handleChange(e) {
         this.setState({
             [e.target.name]: e.target.value
@@ -147,7 +123,7 @@ class LoginSignup extends PureComponent {
     render() {
         return (
             <div className="loginSignup">
-                <Navbar />
+            <Navbar />
                 <div className="container">
                     <div className="row">
                         <div className="col-6" style={{ paddingTop: '150px' }}>
@@ -168,35 +144,36 @@ class LoginSignup extends PureComponent {
                                 </div>
                                 <h5 style={{ textAlign: 'center', paddingTop: '10px' }}>Welcome! Please login to your account</h5>
                                 <Form>
-                                    <label><span style={{ color: 'red' }}>*</span>Username or Email</label>
-                                    <Input onChange={this.handleChange} name='email' style={{ height: '40px', marginBottom: '10px' }} placeholder="Username or Email" prefix={<Icon type="mail" style={{ color: 'gray', fontSize: '15px', paddingLeft: '10px' }} />} />
-                                    <label><span style={{ color: 'red' }}>*</span>Password</label>
-                                    <Input.Password onChange={this.handleChange} name='password' style={{ height: '40px', marginBottom: '10px' }} placeholder="Password" prefix={<Icon type="lock" style={{ color: 'gray', fontSize: '15px', paddingLeft: '10px' }} />} />
-                                    <div ><h4 style={{ color: 'blue' }}><Link>Forget password?</Link></h4></div>
-
-                                    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'row' }}>
-                                        <Button onClick={this.handleSubmit} shape="round" style={{ backgroundColor: 'darkgreen', color: 'white', height: '40px', width: '350px', fontSize: '18px' }}>Login</Button>
-                                    </div>
-
-                                </Form>
-                                <p className="social">
-                                    <Button onClick={this.handleFacebookLogin}>
-                                        <img src={`${require("./View/imgs/fb.png")}`} />
-                                        {/* <Icon type="facebook" /> */}
-                                        Facebook
-                                    </Button>
-                                    OR
-                                    <Button onClick={this.handleGoogleSignup}>
-                                        <img src={`${require("./View/imgs/google1.png")}`} />
-                                        {/* <Icon type="google" /> */}
-                                        Google
-                                    </Button>
-                                </p>
-                                {/* <div className="fb">
-                                    <button type="button" className="btn btn-link fb">Facebook</button>
-                                    <h2>OR</h2>
-                                    <button type="button" className="btn btn-link fb">Google</button>
-                                </div> */}
+                                <Input name='fName' onChange={this.handleChange} style={{ height: '40px', marginBottom: '10px' }} placeholder="Full Name" prefix={<Icon type="user" style={{ color: 'gray', fontSize: '15px' }} />} />
+                                <Input addonAfter={this.props.addonAfter} suffix={
+                                    <Tooltip title={this.props.addonAfter}>
+                                        <Icon type="close" style={{ color: 'rgba(0,0,0,.45)' }} />
+                                    </Tooltip>
+                                } name='username' onChange={this.handleChange} onBlur={this.checkUsername} style={{ height: '40px', marginBottom: '10px' }} placeholder="User Name...." prefix={<Icon type="user" style={{ color: 'gray', fontSize: '15px' }} />} />
+                                <Input onChange={this.handleChange} name='email' style={{ height: '40px', marginBottom: '10px' }} placeholder="Email" prefix={<Icon type="mail" style={{ color: 'gray', fontSize: '15px' }} />} />
+                                <Input.Password addonAfter={this.state.passwordAddon} onBlur={this.handlePassword} onChange={this.handleChange} name='password' style={{ height: '40px', marginBottom: '10px' }} placeholder="Password...." prefix={<Icon type="lock" style={{ color: 'gray', fontSize: '15px' }} />} />
+                                <Input.Password addonAfter={this.state.confirmAddon} onBlur={this.handlePassword} onChange={this.handleChange} name='confirm' style={{ height: '40px', marginBottom: '10px' }} placeholder="Confirm Password...." prefix={<Icon type="lock" style={{ color: 'gray', fontSize: '15px' }} />} />
+                                <Select name='country' onChange={(val) => {
+                                    this.setState({
+                                        country: val
+                                    })
+                                }} showSearch style={{ marginBottom: '10px' }} placeholder="Select a Country" size="large"  >
+                                    {
+                                        countries.map(country => {
+                                            return <Select.Option key={country.code} value={country.name} >{country.name}</Select.Option>
+                                        })
+                                    }
+                                </Select>
+                                <br />
+                                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: "row" }}>
+                                    <Button onClick={this.handleSubmit} shape="round" style={{ backgroundColor: 'darkcyan', color: 'white', height: '40px', width: '150px', fontSize: '18px' }}>Sign Up</Button>
+                                </div>
+                            </Form>
+                            <div className="fb">
+                                <button type="button" className="btn btn-link fb">Facebook</button>
+                                <h2>OR</h2>
+                                <button type="button" className="btn btn-link fb">Google</button>
+                            </div>
                             </div>
                         </div>
                     </div>
@@ -206,4 +183,4 @@ class LoginSignup extends PureComponent {
     }
 }
 
-export default LoginSignup;
+export default SignUp;
