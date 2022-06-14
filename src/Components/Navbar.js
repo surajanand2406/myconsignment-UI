@@ -17,7 +17,7 @@ import 'react-confirm-alert/src/react-confirm-alert.css'; // Import css
 import { countries } from './CustomMade/countries'
 import Login from './View/LoginSignup/Login';
 import SignUp from './View/LoginSignup/Signup';
-
+import LoginSignup from './LoginSignup'
 
 const { Option } = Select
 
@@ -449,7 +449,7 @@ class Navbar extends Component {
 
     handleLogIn = (value) => {
         // this.setState({ isLoginModal: value, isSignUpModal: false })
-        return (<Login />)
+        return (<LoginSignup />)
     }
     handleLogInModalCancel = (value) => {
         this.setState({ isLoginModal: value })
@@ -634,7 +634,7 @@ class Navbar extends Component {
                     <Link to='/sponsor'><li className="l1 l2">Sponsorship</li></Link> */}
                     {this.props.UID !== '' && <li ><Button className="AddListingsFloatButton" size={this.state.windowWidth <= 576 ? 'small' : 'large'} icon="plus" shape="square" onClick={this.handleAddListing}></Button></li>}
                     {this.props.UID !== '' && <li ><Button className="AddListings" shape="round" size="large" onClick={this.handleAddListing}>Add Listing</Button></li>}
-                    <Link to='/loginSignup'>{this.props.UID === '' && <li><Button shape="round" className='button1' size={this.state.windowWidth <= 576 ? 'small' : '20px'} onClick={this.handleLogIn}>Login</Button></li>}</Link>
+                    <Link to='/loginSignup'>{this.props.UID === '' && <li><Button shape="round" className='button1' size={this.state.windowWidth <= 576 ? 'small' : '20px'}>Login</Button></li>}</Link>
                     <Link to='/Signup'>{this.props.UID === '' && <li className="l1 button2"><Button shape="round" size="20px" onClick={this.handleSignUpModal}>Signup</Button></li>}</Link>
 
                     <li className="side-menu"><Icon type="menu" style={{ fontSize: this.state.windowWidth <= 576 ? '20px' : '25px' }} onClick={this.handleSidebar} /></li>

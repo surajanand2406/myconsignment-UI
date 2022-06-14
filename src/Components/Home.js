@@ -1017,6 +1017,7 @@ class Home extends Component {
       <div className="home-container" style={{ width: '100%' }}>
         <Navbar showSearch={this.handleShowSearch} history={this.props.history} />
         <SubNavbar />
+        <Listing />
         <div>
           <ul className="container-fluid bg-light nav">
             <Link to='/auction'><li className="l1 l2">Live Auctions</li></Link>

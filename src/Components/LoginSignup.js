@@ -37,10 +37,10 @@ class LoginSignup extends PureComponent {
                     if (data.message === 'Success') {
                         localStorage.setItem('userData', JSON.stringify(data.doc))
                         console.log(data.doc)
-                        this.props.setUserInfo(data.doc)
-                        this.props.setUID(data.doc.firebaseUID)
-                        // this.props.navigation.navigate('HomeScreen')
-                        this.handleLogInModalCancel()
+                        // this.props.setUserInfo(data.doc)
+                        // this.props.setUID(data.doc.firebaseUID)
+                        // this.props.navigation.navigate('Home')
+                        // this.handleLogInModalCancel()
                     }
                 })
         }).catch(err => console.log(err))

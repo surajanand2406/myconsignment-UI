@@ -2,13 +2,14 @@
 import React, { PureComponent } from "react";
 import { Button, Form, Input, Select, Avatar, Drawer, Radio, Upload, Tooltip, message } from 'antd'
 import { Icon } from '@ant-design/compatible';
+import { Link } from 'react-router-dom'
 import './CSS/LoginSignupCss.css';
 import { url } from "../Constants";
 import firebase from 'firebase'
 import { countries } from './CustomMade/countries'
 import Navbar from "./Navbar";
 
-class SignUp extends PureComponent{
+class SignUp extends PureComponent {
     constructor(props) {
         super(props)
         this.initialState = {
@@ -123,7 +124,7 @@ class SignUp extends PureComponent{
     render() {
         return (
             <div className="loginSignup">
-            <Navbar />
+                <Navbar />
                 <div className="container">
                     <div className="row">
                         <div className="col-6" style={{ paddingTop: '150px' }}>
@@ -144,36 +145,37 @@ class SignUp extends PureComponent{
                                 </div>
                                 <h5 style={{ textAlign: 'center', paddingTop: '10px' }}>Welcome! Please login to your account</h5>
                                 <Form>
-                                <Input name='fName' onChange={this.handleChange} style={{ height: '40px', marginBottom: '10px' }} placeholder="Full Name" prefix={<Icon type="user" style={{ color: 'gray', fontSize: '15px' }} />} />
-                                <Input addonAfter={this.props.addonAfter} suffix={
-                                    <Tooltip title={this.props.addonAfter}>
-                                        <Icon type="close" style={{ color: 'rgba(0,0,0,.45)' }} />
-                                    </Tooltip>
-                                } name='username' onChange={this.handleChange} onBlur={this.checkUsername} style={{ height: '40px', marginBottom: '10px' }} placeholder="User Name...." prefix={<Icon type="user" style={{ color: 'gray', fontSize: '15px' }} />} />
-                                <Input onChange={this.handleChange} name='email' style={{ height: '40px', marginBottom: '10px' }} placeholder="Email" prefix={<Icon type="mail" style={{ color: 'gray', fontSize: '15px' }} />} />
-                                <Input.Password addonAfter={this.state.passwordAddon} onBlur={this.handlePassword} onChange={this.handleChange} name='password' style={{ height: '40px', marginBottom: '10px' }} placeholder="Password...." prefix={<Icon type="lock" style={{ color: 'gray', fontSize: '15px' }} />} />
-                                <Input.Password addonAfter={this.state.confirmAddon} onBlur={this.handlePassword} onChange={this.handleChange} name='confirm' style={{ height: '40px', marginBottom: '10px' }} placeholder="Confirm Password...." prefix={<Icon type="lock" style={{ color: 'gray', fontSize: '15px' }} />} />
-                                <Select name='country' onChange={(val) => {
-                                    this.setState({
-                                        country: val
-                                    })
-                                }} showSearch style={{ marginBottom: '10px' }} placeholder="Select a Country" size="large"  >
-                                    {
-                                        countries.map(country => {
-                                            return <Select.Option key={country.code} value={country.name} >{country.name}</Select.Option>
+                                    <Input name='fName' onChange={this.handleChange} style={{ height: '40px', marginBottom: '10px' }} placeholder="Full Name" prefix={<Icon type="user" style={{ color: 'gray', fontSize: '15px' }} />} />
+                                    <Input addonAfter={this.props.addonAfter} suffix={
+                                        <Tooltip title={this.props.addonAfter}>
+                                            <Icon type="close" style={{ color: 'rgba(0,0,0,.45)' }} />
+                                        </Tooltip>
+                                    } name='username' onChange={this.handleChange} onBlur={this.checkUsername} style={{ height: '40px', marginBottom: '10px' }} placeholder="User Name...." prefix={<Icon type="user" style={{ color: 'gray', fontSize: '15px' }} />} />
+                                    <Input onChange={this.handleChange} name='email' style={{ height: '40px', marginBottom: '10px' }} placeholder="Email" prefix={<Icon type="mail" style={{ color: 'gray', fontSize: '15px' }} />} />
+                                    <Input.Password addonAfter={this.state.passwordAddon} onBlur={this.handlePassword} onChange={this.handleChange} name='password' style={{ height: '40px', marginBottom: '10px' }} placeholder="Password...." prefix={<Icon type="lock" style={{ color: 'gray', fontSize: '15px' }} />} />
+                                    <Input.Password addonAfter={this.state.confirmAddon} onBlur={this.handlePassword} onChange={this.handleChange} name='confirm' style={{ height: '40px', marginBottom: '10px' }} placeholder="Confirm Password...." prefix={<Icon type="lock" style={{ color: 'gray', fontSize: '15px' }} />} />
+                                    <Select name='country' onChange={(val) => {
+                                        this.setState({
+                                            country: val
                                         })
-                                    }
-                                </Select>
+                                    }} showSearch style={{ marginBottom: '10px' }} placeholder="Select a Country" size="large"  >
+                                        {
+                                            countries.map(country => {
+                                                return <Select.Option key={country.code} value={country.name} >{country.name}</Select.Option>
+                                            })
+                                        }
+                                    </Select>
+                                    <br />
+                                    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: "row" }}>
+                                        <Button onClick={this.handleSubmit} shape="round" style={{ backgroundColor: 'darkcyan', color: 'white', height: '40px', width: '150px', fontSize: '18px' }}>Sign Up</Button>
+                                    </div>
+                                </Form>
                                 <br />
-                                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: "row" }}>
-                                    <Button onClick={this.handleSubmit} shape="round" style={{ backgroundColor: 'darkcyan', color: 'white', height: '40px', width: '150px', fontSize: '18px' }}>Sign Up</Button>
+                                <div style={{textAlign:'center'}}>
+                                <h3>By clicking on Signup, you agree to our <Link to='privacy-policy'>User agreement</Link> and <Link to='privacy-policy'>Privacy Policy</Link> </h3>
+                                <br />
+                                <p className='lnk' style={{ color: 'blue', fontSize: '15px' }} onClick={this.handleLoginModal}>Do you already have an account?</p>
                                 </div>
-                            </Form>
-                            <div className="fb">
-                                <button type="button" className="btn btn-link fb">Facebook</button>
-                                <h2>OR</h2>
-                                <button type="button" className="btn btn-link fb">Google</button>
-                            </div>
                             </div>
                         </div>
                     </div>
