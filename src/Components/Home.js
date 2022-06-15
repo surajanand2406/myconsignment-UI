@@ -8,6 +8,7 @@ import Fade from 'react-reveal/Fade';
 import Navbar from './Navbar'
 import SubNavbar from './SubNavbar'
 import Footer from './Footer'
+import Listing from './Listing';
 import { Icon as Iconn } from '@ant-design/compatible';
 import { Button, Menu, Dropdown, Divider, Card, List, Modal, Skeleton, Avatar, Input, Tooltip, Slider, Rate, message, Carousel } from 'antd'
 import './CSS/Home.css'
@@ -1017,7 +1018,7 @@ class Home extends Component {
       <div className="home-container" style={{ width: '100%' }}>
         <Navbar showSearch={this.handleShowSearch} history={this.props.history} />
         <SubNavbar />
-        <Listing />
+        {/* <Listing /> */}
         <div>
           <ul className="container-fluid bg-light nav">
             <Link to='/auction'><li className="l1 l2">Live Auctions</li></Link>

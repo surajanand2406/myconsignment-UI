@@ -1,0 +1,53 @@
+.listing {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.side-list {
+    padding-left: 15px;
+    padding-top: 20px;
+}
+
+.spa {
+    padding-top: 20px;
+}
+
+ul {
+    list-style-type: none;
+    /* Remove bullets */
+    padding: 0;
+    /* Remove padding */
+    margin: 0;
+    /* Remove margins */
+}
+
+ul li {
+    margin-top: -1px;
+    /* Prevent double borders */
+    padding: 12px;
+    /* Add some padding */
+}
+
+.card-container {
+    padding-top: 20px;
+}
+
+.card {
+    border: none;
+    display: flex;
+
+}
+
+.card-img {
+    width: 200px;
+    height: 230px;
+}
+
+.btn-circle {
+    width: 150px;
+    height: 35px;
+    /* padding: 6px 0px; */
+    border-radius: 15px;
+    font-size: 14px;
+    text-align: center;
+}

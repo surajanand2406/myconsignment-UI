@@ -1,14 +1,27 @@
 import React, { PureComponent } from "react";
 import { Input, Button } from "antd";
+import listingImg from './images/suit.webp';
+import './CSS/ListingCss.css'
 
+let size= "32,42,68";
+let price="345"
 class Listing extends PureComponent {
+
+  
+  constructor(props) {
+    super(props)
+    this.initialState = {
+      price: 345,
+      size:"32,42,68"
+    }
+  }
 
   render() {
     return (
       <div className="container">
         <div className="row">
-          <div className="col-3">
-            <Button type="button" className="btn btn-lg btn-success">Filter Seller Products</Button>
+          <div className="col-3" style={{ paddingTop:'20px'}}>
+            <Button type="button" className="btn btn-lg btn-success" style={{ backgroundColor:'green', color:'#fff'}}>Filter Seller Products</Button>
             <div className=" side-list">
               <h1>Category</h1>
               <div className="spa"><a>Suits(433)</a></div>
@@ -16,7 +29,7 @@ class Listing extends PureComponent {
               <div className="spa"><a>Trousers(345)</a></div>
               <div className="spa"><a>Wedding(434)</a></div>
               <div className="spa"><a>Jackets(333)</a></div>
-              <h3 style="padding-top: 30px;">PRICE</h3>
+              <h3 style={{paddingTop: '30px'}}>PRICE</h3>
               <div className="slidecontainer">
                 <Input type="range" min="1" max="100" value="50" className="slider" id="myRange" />
               </div>
@@ -50,16 +63,16 @@ class Listing extends PureComponent {
               <div className="card">
                 <div className="row">
                   <div className="col-2">
-                    <img src="../../../assets/images/suit.webp" style={{width: '150px', height: '230px'}} /> 
+                    <img src={listingImg} style={{width: '150px', height: '230px'}} /> 
                   </div>
                   <div className="col-10">
                     <div className="card-body">
-                      <h3 className="card-title">Net Streched Suit <span style={{color: '#d3d011', fontWeight: '500px'}}>${{ price }}</span><i className="bi bi-arrow-left-right" style={{paddingLeft: '400px'}}></i>&nbsp;&nbsp;&nbsp;<i className="bi bi-heart-fill blue-color"></i></h3>
+                      <h3 className="card-title">Net Streched Suit <span style={{color: '#d3d011', fontWeight: '500px'}}>`${ price }`</span><i className="bi bi-arrow-left-right" style={{paddingLeft: '400px'}}></i>&nbsp;&nbsp;&nbsp;<i className="bi bi-heart-fill blue-color"></i></h3>
                       <span className="card-description">
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam, iste totam temporibus consequuntur autem repudiandae tempora. Consectetur, aperiam rerum minima voluptates iste enim tempora, magni eaque atque est accusantium vero?
                       </span>
                       <span>
-                        <h3 style="padding-top: 20px;">Size {{ size }}</h3>
+                        <h3 style={{paddingTop: '20px'}}>`Size ${ size }`</h3>
                         <button type="button" className="btn btn-success btn-circle">ADD TO CART</button>
                       </span>
                     </div>
@@ -71,16 +84,16 @@ class Listing extends PureComponent {
               <div className="card">
                 <div className="row">
                   <div className="col-2">
-                    <img src="../../../assets/images/suit.webp" style={{width: '150px', height: '230px' }} />
+                    <img src={listingImg} style={{width: '150px', height: '230px' }} />
                   </div>
                   <div className="col-10">
                     <div className="card-body">
-                      <h3 className="card-title">Net Streched Suit <span style="color: #d3d011; font-weight: 500px;">${{ price }}</span><i className="bi bi-arrow-left-right" style={{paddingLeft: '400px'}}></i>&nbsp;&nbsp;&nbsp;<i className="bi bi-heart-fill blue-color"></i></h3>
+                      <h3 className="card-title">Net Streched Suit <span style={{color: '#d3d011', fontWeight: '500px'}}>`${ price }`</span><i className="bi bi-arrow-left-right" style={{paddingLeft: '400px'}}></i>&nbsp;&nbsp;&nbsp;<i className="bi bi-heart-fill blue-color"></i></h3>
                       <span className="card-description">
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam, iste totam temporibus consequuntur autem repudiandae tempora. Consectetur, aperiam rerum minima voluptates iste enim tempora, magni eaque atque est accusantium vero?
                       </span>
                       <span>
-                        <h3 style={{paddingTop: '20px'}}>Size {{ size }}</h3>
+                        <h3 style={{paddingTop: '20px'}}>`Size ${ size }`</h3>
                         <Button type="button" className="btn btn-success btn-circle">ADD TO CART</Button>
                       </span>
                     </div>
@@ -92,16 +105,16 @@ class Listing extends PureComponent {
               <div className="card">
                 <div className="row">
                   <div className="col-2">
-                    <img src="../../../assets/images/suit.webp" style={{width: '150px', height: '230px'}}/>
+                    <img src={listingImg} style={{width: '150px', height: '230px'}}/>
                   </div>
                   <div className="col-10">
                     <div className="card-body">
-                      <h3 className="card-title">Net Streched Suit <span style="color: #d3d011; font-weight: 500px;">${{ price }}</span><i className="bi bi-arrow-left-right" style={{paddingLeft: '400px'}}></i>&nbsp;&nbsp;&nbsp;<i className="bi bi-heart-fill blue-color"></i></h3>
+                      <h3 className="card-title">Net Streched Suit <span style={{color: '#d3d011', fontWeight: '500px'}}>`${ price }`</span><i className="bi bi-arrow-left-right" style={{paddingLeft: '400px'}}></i>&nbsp;&nbsp;&nbsp;<i className="bi bi-heart-fill blue-color"></i></h3>
                       <span className="card-description">
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam, iste totam temporibus consequuntur autem repudiandae tempora. Consectetur, aperiam rerum minima voluptates iste enim tempora, magni eaque atque est accusantium vero?
                       </span>
                       <span>
-                        <h3 style="padding-top: 20px;">Size {{ size }}</h3>
+                        <h3 style={{paddingTop: '20px'}}>`Size ${ size }`</h3>
                         <button type="button" className="btn btn-success btn-circle">ADD TO CART</button>
                       </span>
                     </div>
