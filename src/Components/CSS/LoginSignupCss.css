@@ -52,3 +52,6 @@
     max-height: 16px;
     height: auto;
   }
+  .ant-select{
+    display: flex !important;
+  }
