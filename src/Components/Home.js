@@ -81,7 +81,8 @@ const settings = {
 };
 
 const contentStyle = {
-  height: '560px',
+  height: '490px',
+  width:'880px',
   color: '#fff',
   lineHeight: '160px',
   textAlign: 'center',
@@ -1018,34 +1019,33 @@ class Home extends Component {
       <div className="home-container" style={{ width: '100%' }}>
         <Navbar showSearch={this.handleShowSearch} history={this.props.history} />
         <SubNavbar />
-        {/* <Listing /> */}
         <div>
           <ul className="container-fluid bg-light nav">
-            <Link to='/auction'><li className="l1 l2">Live Auctions</li></Link>
-            <Link to="/custom-made"><li className="l1 l2">Custom Made</li></Link>
-            <Link to='/exclusive-services'><li className="l1 l2">Exclusive Services</li></Link>
-            <Link to='/sponsor'><li className="l1 l2">Sponsorship</li></Link>
-            <Link to='/blog'><li className="l1 l2">Blog</li></Link>
+            <Link to='/auction'><li className="l1 l2"><b>Live Auctions</b></li></Link>
+            <Link to="/custom-made"><li className="l1 l2"><b> Custom Made</b> </li></Link>
+            <Link to='/exclusive-services'><li className="l1 l2"> <b>Exclusive Services</b></li></Link>
+            <Link to='/sponsor'><li className="l1 l2"> <b>Sponsorship</b> </li></Link>
+            <Link to='/blog'><li className="l1 l2"> <b>Blog</b></li></Link>
           </ul>
         </div>
         <div className='container-fluid'>
           <div className='row'>
-            <div className='col-3 categories'>
+            <div className='col-3 categories' style={{ marginBottom:'50px'}}   >
               <ul>
-                <li className='catype'>Categories</li>
-                <Link to='/secondary/0'><li>Art & Collection</li></Link>
-                <Link to='/secondary/1'><li>Clothing & Shoes</li></Link>
-                <Link to='/secondary/2'><li>Accessories</li></Link>
-                <Link to='/secondary/3'><li>Handcrafts</li></Link>
-                <Link to='/secondary/4'><li>Services</li></Link>
-                <Link to='/secondary/5'><li>Home & Decor</li></Link>
-                <Link to='/secondary/6'><li>Technical Services</li></Link>
-                <Link to='/secondary/7'><li>Vintage</li></Link>
-                <Link to='/secondary/8'><li>Stones & Specimens</li></Link>
-                <Link to='/secondary/9'><li>Craft Supplies & Tools</li></Link>
-                <Link to='/secondary/10'><li>Paper & Party Supplies</li></Link>
-                <Link to='/secondary/11'><li>Weddings</li></Link>
-                <Link to='/secondary/12'><li>Bags & Purses</li></Link>
+                <li className='catype'><Iconn type="Menu" key="like" />&nbsp;&nbsp;Categories</li>
+                <Link to='/listing'><li><Iconn type="heart" key="like" />&nbsp;&nbsp; Art & Collection</li></Link>
+                <Link to='/secondary/1'><li><Iconn type="heart" key="like" />&nbsp;&nbsp;Clothing & Shoes</li></Link>
+                <Link to='/secondary/2'><li><Iconn type="heart" key="like" />&nbsp;&nbsp;Accessories</li></Link>
+                <Link to='/secondary/3'><li><Iconn type="heart" key="like" />&nbsp;&nbsp;Handcrafts</li></Link>
+                <Link to='/secondary/4'><li><Iconn type="heart" key="like" />&nbsp;&nbsp;Services</li></Link>
+                <Link to='/secondary/5'><li><Iconn type="heart" key="like" />&nbsp;&nbsp;Home & Decor</li></Link>
+                <Link to='/secondary/6'><li><Iconn type="heart" key="like" />&nbsp;&nbsp;Technical Services</li></Link>
+                <Link to='/secondary/7'><li><Iconn type="heart" key="like" />&nbsp;&nbsp;Vintage</li></Link>
+                <Link to='/secondary/8'><li><Iconn type="heart" key="like" />&nbsp;&nbsp;Stones & Specimens</li></Link>
+                <Link to='/secondary/9'><li><Iconn type="heart" key="like" />&nbsp;&nbsp;Craft Supplies & Tools</li></Link>
+                <Link to='/secondary/10'><li><Iconn type="heart" key="like" />&nbsp;&nbsp;Paper & Party Supplies</li></Link>
+                <Link to='/secondary/11'><li><Iconn type="heart" key="like" />&nbsp;&nbsp;Weddings</li></Link>
+                <Link to='/secondary/12'><li><Iconn type="heart" key="like" />&nbsp;&nbsp;Bags & Purses</li></Link>
               </ul>
             </div>
             <div className='col-8'>
@@ -1970,7 +1970,7 @@ class Home extends Component {
           </p>
           <h4 style={{textAlign: 'center', color:'blue'}}><a>See more...</a></h4>
           <div className="butn1">
-            <button type="button" class="button1">Subscribe to PRO</button>
+            <button type="button" class="buttonPro">Subscribe to PRO</button>
           </div>
         </div>
       </div>
@@ -1991,7 +1991,7 @@ class Home extends Component {
           </p>
           <h4 style={{textAlign: 'center', color:'blue'}}><a>See more...</a></h4>
           <div className="butn2">
-            <button type="button" className="button2">Subscribe to Gold</button>
+            <button type="button" className="buttonGold">Subscribe to Gold</button>
           </div>
         </div>
       </div>

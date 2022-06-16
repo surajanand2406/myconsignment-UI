@@ -31,12 +31,9 @@ class SubNavbar extends Component {
                         })
                     }} style={{ width: this.state.windowWidth <= 768 ? '70%' : '50%', border: 'solid 1px gray', borderRadius: 15, backgroundColor: '#eeeeee' }} size="large" placeholder="Search Listings" />
                 </div>
+                <div style={{display:'flex', paddingLeft:'90px',paddingRight:'90px'}}>
                 <Icon type="heart" theme="outlined" style={{ fontSize: '16px', color: '#fff' }}/>
                 <Icon type="shopping-cart" theme="outlined" style={{ fontSize: '16px', color: '#fff', paddingLeft:'10px' }}/>
-                  
-                <div class="col-1 mt-3" icon="fa-light fa-heart">
-                </div>
-                <div class="col-1 mt-3">
                 </div>
             </div>);
     }

@@ -191,6 +191,14 @@
     }
 
 }
+.logo {
+    display: flex;
+    align-items: center;
+    height: 65%;
+    margin-right: 55px;
+    margin-left: 93px;
+    
+}
 .login-page{
     width: 450;
 }

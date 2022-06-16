@@ -13,7 +13,7 @@
 }
 .home-container ul li{
   list-style: none;
-  padding-top: 10px;
+  padding-top: 2px;
   padding-bottom: 10px;
   margin-right: 18px;
   color: black;
@@ -259,6 +259,11 @@
     padding: 20px;
     cursor: pointer;
   }
+  .bg-light {
+    background-color: #f8f9fa!important;
+    height: 60px;
+    padding-top: 15px;}
+  
 /* 
   .Demo__map-maker-icon {
     color: #FD6C6C;
@@ -364,10 +369,14 @@
    */
 
    .categories{
-     text-align: center;
+     text-align: left;
+     padding-top: 60px;
+     margin-left: 80px;
+     
    }
    .catype{
      text-align: left;
+      
    }
    .carousel{
      height: 300px;
@@ -488,22 +497,22 @@
   height: 35px;
 
 }
-/* .button1{
+.buttonPro{
   background: linear-gradient(to right, #85eb9b, #11eb90);
   border-radius: 5px;
   border: none;
   width: 200px;
   height: 35px;
 
-} */
-/* .button2{
+}
+.buttonGold{
   background: linear-gradient(to right, #cae688, #a9e409);
   border-radius: 5px;
   border: none;
   width: 200px;
   height: 35px;
 
-} */
+}
 .button3{
   background: linear-gradient(to right, #e0e7e9, #ec2b2b);
   border-radius: 5px;
